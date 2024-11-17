@@ -96,7 +96,7 @@
                     <!-- End Select -->
 
                     <div class="hs-dropdown relative inline-flex md:hidden [--auto-close:inside]">
-                        <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle size-8 flex justify-center items-center gap-x-2 text-gray-800 hover:text-gray-500 rounded-lg focus:outline-none focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                        <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                             <EllipsisVertical class="flex-none size-4 text-gray-600 dark:text-neutral-500" />
                         </button>
                       
