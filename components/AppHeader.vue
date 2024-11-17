@@ -50,7 +50,7 @@
                     <!-- End Search Input -->
                 </div>
 
-                <div class="items-center gap-3 text-gray-900 hidden lg:flex lg:w-full">
+                <div class="items-center gap-3 text-gray-900 hidden lg:flex">
                     <svg class="size-9" viewBox="0 0 90 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M33.2267 50.3414H56.7733M37.1512 45.1088V35.9519M42.3837 45.1088V35.9519M47.6163 45.1088V35.9519M52.8488 45.1088V35.9519M45 24.1786L55.4651 30.7193H34.5349L45 24.1786Z" stroke="currentColor" stroke-width="1.56977" stroke-linecap="round" stroke-linejoin="round"/>
                         <circle cx="45" cy="37.26" r="27.2093" stroke="currentColor" stroke-width="1.04651"/>
