@@ -20,8 +20,8 @@
             <div class="w-full flex items-center justify-end ms-auto lg:justify-between gap-x-1 lg:gap-x-3">
 
                 <div class="hidden xl:block xl:w-full">
-                    <!-- Search Input -->
                     <span class="text-sm font-semibold text-gray-800 truncate dark:text-neutral-400">Dashboard</span>
+                    <!-- Search Input -->
                     <!-- <div class="relative">
                         <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3.5">
                             <Search class="shrink-0 size-4 text-gray-400 dark:text-white/60" />
@@ -78,7 +78,8 @@
 
                     <div class="hs-dropdown relative inline-flex md:hidden [--auto-close:inside]">
                         <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                            <EllipsisVertical class="flex-none size-4 text-gray-600 dark:text-neutral-500" />
+                            <EllipsisVertical class="hs-dropdown-open:hidden flex-none size-4 text-gray-600 dark:text-neutral-500" />
+                            <X class="hs-dropdown-open:block hidden size-4 text-gray-600 dark:text-neutral-500" />
                         </button>
                       
                         <div class="hs-dropdown-menu border border-gray-200 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
@@ -145,5 +146,5 @@
 </template>
 
 <script setup>
-    import { Search, Command, Plus, Bell, Activity, CloudDownload, ShoppingBag, Users, EllipsisVertical } from 'lucide-vue-next';
+    import { Search, Command, Plus, Bell, Activity, CloudDownload, ShoppingBag, Users, EllipsisVertical, X } from 'lucide-vue-next';
 </script>

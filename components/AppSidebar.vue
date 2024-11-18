@@ -1,12 +1,11 @@
 <template>
     <!-- Sidebar -->
-    <div id="hs-application-sidebar"
-        class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[260px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-white border-e border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0  dark:bg-neutral-800 dark:border-neutral-700"
+    <div id="hs-application-sidebar" class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[260px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-white border-e border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0  dark:bg-neutral-800 dark:border-neutral-700"
         role="dialog" tabindex="-1" aria-label="Sidebar">
         <div class="relative flex flex-col h-full max-h-full">
             <div class="px-3 pt-4">
                 <!-- Logo -->
-                <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                <a class="inline-flex items-center gap-2 focus:outline-none focus:opacity-80"
                     href="#" aria-label="Preline">
                     <svg class="size-14" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="60" height="60" rx="30" fill="#1E293B" />
@@ -47,6 +46,7 @@
                         <rect width="10.5658" height="10.5659" transform="matrix(0.500028 0.86601 -1 -3.18788e-05 34.4163 38.9229)" fill="#CFCFCF" />
                         <rect width="10.5659" height="10.5659" transform="matrix(0.499974 0.866041 -0.499971 0.866041 39.6982 29.7725)" fill="#EAEAEA" />
                     </svg>
+                    <span class="text-sm text-gray-800 font-medium">Learning Management System</span>
                 </a>
                 <!-- End Logo -->
             </div>
@@ -259,23 +259,19 @@
                                 <p class="text-sm font-medium text-gray-800 dark:text-neutral-200">Administrator</p>
                             </div>
                             <div class="p-1.5 space-y-0.5">
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
-                                    href="#">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
                                     <LayoutGrid class="shrink-0 size-4" />
                                     App Portal
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
-                                    href="#">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
                                     <Newspaper class="shrink-0 size-4" />
                                     Newsletter
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
-                                    href="#">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
                                     <Bolt class="shrink-0 size-4" />
                                     Settings
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300"
-                                    href="#">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
                                     <LogOut class="shrink-0 size-4" />
                                     Logout
                                 </a>
