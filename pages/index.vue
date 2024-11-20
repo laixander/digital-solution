@@ -87,7 +87,7 @@
                                     href="../examples/html/recover-account.html">Forgot password?</a>
                             </div>
                             <!-- End Checkbox -->
-                            <NuxtLink to="/dashboard">
+                            <NuxtLink to="/portal">
                                 <button type="submit"
                                     class="w-full inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4">Sign
                                     in</button>
