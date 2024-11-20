@@ -1,1 +1,0 @@
-import{u as s}from"./CZG_iGec.js";import{o as a,c as t,S as o}from"./X07q0z_-.js";const p={__name:"special",setup(r){return s({bodyAttrs:{class:"special-layout"}}),(e,l)=>(a(),t("div",null,[o(e.$slots,"default")]))}};export{p as default};
