@@ -1,13 +1,13 @@
 <template>
     <!-- ========== HEADER ========== -->
     <header
-        class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 lg:ps-[260px] dark:bg-neutral-800 dark:border-neutral-700">
+        class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 xl:ps-[260px] dark:bg-neutral-800 dark:border-neutral-700">
         <nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
 
-            <div class="w-full flex items-center ms-auto justify-between gap-x-1 lg:gap-x-3">
+            <div class="w-full flex items-center ms-auto justify-between gap-x-1 xl:gap-x-3">
                 <!-- Navigation Toggle -->
                 <button type="button"
-                    class="lg:hidden size-8 flex justify-center items-center gap-x-2 border border-gray-200 text-gray-800 hover:text-gray-500 rounded-lg focus:outline-none focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                    class="xl:hidden size-8 flex justify-center items-center gap-x-2 border border-gray-200 text-gray-800 hover:text-gray-500 rounded-lg focus:outline-none focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                     aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-application-sidebar"
                     aria-label="Toggle navigation" data-hs-overlay="#hs-application-sidebar">
                     <span class="sr-only">Toggle Navigation</span>
@@ -39,20 +39,20 @@
                     </span>
                 </div>
 
-                <div class="flex flex-row items-center justify-end gap-1 lg:w-full">
+                <div class="flex flex-row items-center justify-end gap-1 xl:w-full">
                     <!-- Select -->
-                    <div class="hidden lg:block">
+                    <div class="hidden xl:block">
                         <CampusSelect v-model="campus" :options="campuses" placeholder="Select Campus" width="200px" />
                     </div>
                     <!-- End Select -->
 
                     <!-- Select -->
-                    <div class="hidden lg:block">
+                    <div class="hidden xl:block">
                         <LevelSelect v-model="level" :options="levels" placeholder="Select Level" width="200px" />
                     </div>
                     <!-- End Select -->
 
-                    <div class="hs-dropdown relative inline-flex lg:hidden [--auto-close:inside]">
+                    <div class="hs-dropdown relative inline-flex xl:hidden [--auto-close:inside]">
                         <button id="hs-dropdown-custom-icon-trigger" type="button"
                             class="hs-dropdown-toggle size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                             aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">

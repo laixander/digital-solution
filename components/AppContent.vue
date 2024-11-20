@@ -1,12 +1,12 @@
 <template>
     <!-- Content -->
-    <div class="w-full lg:ps-64">
+    <div class="w-full xl:ps-64">
         <div class="p-4 sm:p-6 space-y-3 sm:space-y-4">
             <!-- your content goes here ... -->
             <div
                 class="bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 space-y-4 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                 <div class="flex items-center justify-between gap-3">
-                    <div class="lg:w-full">
+                    <div class="xl:w-full">
                         <div
                             class="inline-flex bg-gray-100 hover:bg-gray-200 rounded-lg transition p-1 dark:bg-neutral-700 dark:hover:bg-neutral-600">
                             <nav class="flex gap-x-1" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
@@ -33,7 +33,7 @@
                         <DsSearchInput />
                     </div>
 
-                    <div class="lg:w-full flex justify-end gap-2">
+                    <div class="xl:w-full flex justify-end gap-2">
 
                         <div class="md:hidden">
                             <button type="button"
@@ -60,7 +60,7 @@
                             class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white text-nowrap hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                             aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-offcanvas-right"
                             data-hs-overlay="#hs-offcanvas-right">
-                            Create Post
+                            Create&nbsp;Post
                             <PlusIcon class="shrink-0 size-4" />
                         </button>
 
@@ -102,7 +102,7 @@
                     </div>
                 </div>
                 <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1"
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     <span v-for="n in 7">
                         <ClassesCard />
                     </span>
