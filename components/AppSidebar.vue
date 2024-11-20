@@ -1,6 +1,6 @@
 <template>
     <!-- Sidebar -->
-    <div id="hs-application-sidebar" class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[260px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-white border-e border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0  dark:bg-neutral-800 dark:border-neutral-700"
+    <div id="hs-application-sidebar" class="hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform w-[256px] h-full hidden fixed inset-y-0 start-0 z-[60] bg-white border-e border-gray-200 lg:block lg:translate-x-0 lg:end-auto lg:bottom-0  dark:bg-neutral-800 dark:border-neutral-700"
         role="dialog" tabindex="-1" aria-label="Sidebar">
         <div class="relative flex flex-col h-full max-h-full">
             <div class="px-3 pt-4">
@@ -59,7 +59,7 @@
                         <li>
                             <a class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white"
                                 href="#">
-                                <House class="shrink-0 size-4" />
+                                <HouseIcon class="shrink-0 size-4" />
                                 Dashboard
                             </a>
                         </li>
@@ -68,10 +68,10 @@
                             <button type="button"
                                 class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
                                 aria-expanded="true" aria-controls="users-accordion-child">
-                                <Users class="shrink-0 size-4" />
+                                <UsersIcon class="shrink-0 size-4" />
                                 Users
-                                <ChevronUp class="hs-accordion-active:block ms-auto hidden size-4" />
-                                <ChevronDown class="hs-accordion-active:hidden ms-auto block size-4" />
+                                <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
+                                <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
                             </button>
 
                             <div id="users-accordion-child"
@@ -84,8 +84,8 @@
                                             class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
                                             aria-expanded="true" aria-controls="users-accordion-sub-1-child">
                                             Sub Menu 1
-                                            <ChevronUp class="hs-accordion-active:block ms-auto hidden size-4" />
-                                            <ChevronDown class="hs-accordion-active:hidden ms-auto block size-4" />
+                                            <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
+                                            <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
                                         </button>
 
                                         <div id="users-accordion-sub-1-child"
@@ -118,8 +118,8 @@
                                             class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
                                             aria-expanded="true" aria-controls="users-accordion-sub-2-child">
                                             Sub Menu 2
-                                            <ChevronUp class="hs-accordion-active:block ms-auto hidden size-4" />
-                                            <ChevronDown class="hs-accordion-active:hidden ms-auto block size-4" />
+                                            <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
+                                            <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
                                         </button>
 
                                         <div id="users-accordion-sub-2-child"
@@ -155,10 +155,10 @@
                             <button type="button"
                                 class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
                                 aria-expanded="true" aria-controls="account-accordion-child">
-                                <UserCog class="shrink-0 size-4" />
+                                <UserCogIcon class="shrink-0 size-4" />
                                 Account
-                                <ChevronUp class="hs-accordion-active:block ms-auto hidden size-4" />
-                                <ChevronDown class="hs-accordion-active:hidden ms-auto block size-4" />
+                                <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
+                                <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
                             </button>
 
                             <div id="account-accordion-child"
@@ -191,10 +191,10 @@
                             <button type="button"
                                 class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
                                 aria-expanded="true" aria-controls="projects-accordion-child">
-                                <Briefcase class="shrink-0 size-4" />
+                                <BriefcaseIcon class="shrink-0 size-4" />
                                 Projects
-                                <ChevronUp class="hs-accordion-active:block ms-auto hidden size-4" />
-                                <ChevronDown class="hs-accordion-active:hidden ms-auto block size-4" />
+                                <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
+                                <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
                             </button>
 
                             <div id="projects-accordion-child"
@@ -226,14 +226,14 @@
                         <li>
                             <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-300"
                                 href="#">
-                                <CalendarDays class="shrink-0 size-4" />
+                                <CalendarDaysIcon class="shrink-0 size-4" />
                                 Calendar
                             </a>
                         </li>
                         <li>
                             <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                                 href="#">
-                                <BookOpen class="shrink-0 size-4" />
+                                <BookOpenIcon class="shrink-0 size-4" />
                                 Documentation
                             </a>
                         </li>
@@ -260,19 +260,19 @@
                             </div>
                             <div class="p-1.5 space-y-0.5">
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                                    <LayoutGrid class="shrink-0 size-4" />
+                                    <LayoutGridIcon class="shrink-0 size-4" />
                                     App Portal
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                                    <Newspaper class="shrink-0 size-4" />
+                                    <NewspaperIcon class="shrink-0 size-4" />
                                     Newsletter
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                                    <Bolt class="shrink-0 size-4" />
+                                    <BoltIcon class="shrink-0 size-4" />
                                     Settings
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                                    <LogOut class="shrink-0 size-4" />
+                                    <LogOutIcon class="shrink-0 size-4" />
                                     Logout
                                 </a>
                             </div>
@@ -284,7 +284,7 @@
                     </div>
 
                     <button type="button" class="size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-                        <Bell class="shrink-0 size-4" />
+                        <BellIcon class="shrink-0 size-4" />
                         <span class="sr-only">Notifications</span>
                     </button>
                 </div>
@@ -295,5 +295,5 @@
 </template>
 
 <script setup>
-import { ChevronDown, ChevronUp, House, Users, UserCog, Briefcase, CalendarDays, BookOpen, Bell, LayoutGrid, Bolt, Newspaper, LogOut } from 'lucide-vue-next';
+    import { ChevronDownIcon, ChevronUpIcon, HouseIcon, UsersIcon, UserCogIcon, BriefcaseIcon, CalendarDaysIcon, BookOpenIcon, BellIcon, LayoutGridIcon, BoltIcon, NewspaperIcon, LogOutIcon } from 'lucide-vue-next';
 </script>

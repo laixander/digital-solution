@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     @apply bg-gray-50 dark:bg-neutral-900;
+}
+
+.special-layout {
+    @apply min-h-screen flex flex-col justify-center items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-contain before:size-full before:-z-[1] before:transform before:-translate-x-1/2;
+    & > div {
+        @apply w-full;
+    }
+}
+
+.simple-layout {
+    @apply min-h-screen flex flex-col items-center;
+    & > div {
+        @apply w-full;
+    }
 }

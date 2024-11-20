@@ -12,11 +12,16 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@tailwindcss/forms": "^0.5.9",
     "nuxt": "^3.9.0",
     "vue": "^3.4.0",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@tiptap/pm": "^2.9.1",
+    "@tiptap/starter-kit": "^2.9.1",
+    "@tiptap/vue-3": "^2.9.1",
     "gh-pages": "^6.1.1",
     "lucide-vue-next": "^0.460.0",
     "preline": "^2.5.1"

@@ -15,5 +15,7 @@ export default <Partial<Config>>{
     ],
     plugins: [
         require('preline/plugin'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
     ],
 }
