@@ -1,5 +1,5 @@
 <template>
-    <!-- ========== HEADER ========== -->
+    <!-- header -->
     <header
         class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 xl:ps-[260px] dark:bg-neutral-800 dark:border-neutral-700">
         <nav class="px-4 sm:px-6 flex basis-full items-center w-full mx-auto">
@@ -74,7 +74,7 @@
             </div>
         </nav>
     </header>
-    <!-- ========== END HEADER ========== -->
+    <!-- End header -->
 </template>
 
 <script setup>

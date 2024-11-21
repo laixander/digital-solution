@@ -121,7 +121,6 @@ import { SearchIcon, PlusIcon, CreditCardIcon, TableIcon, XIcon } from 'lucide-v
 import TiptapEditor from '~/components/TiptapEditor.vue';
 import MultiSelectSections from '~/components/DsMultiSelect.vue';
 
-// Example options
 const sections = ref(['Section 1A', 'Section 2A', 'Section 3A', 'Section 4A', 'Section 5A']);
-const selectedSections = ref([]);  // This will hold the selected sections
+const selectedSections = ref([]);
 </script>
