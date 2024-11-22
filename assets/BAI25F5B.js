@@ -1,1 +1,0 @@
-import{U as o,r as u,k as f,V as v,v as d,l,p as i,W as h,X as p}from"./Ca60w2f6.js";function I(t,a={}){const e=a.head||o();if(e)return e.ssr?e.push(t,a):m(e,t,a)}function m(t,a,e={}){const s=u(!1),n=u({});f(()=>{n.value=s.value?{}:v(a)});const r=t.push(n.value,e);return d(n,c=>{r.patch(c)}),l()&&(i(()=>{r.dispose()}),h(()=>{s.value=!0}),p(()=>{s.value=!1})),r}export{I as u};

@@ -1,0 +1,1 @@
+import{u as s}from"./wyMmNTDp.js";import{o as t,c as o,C as a}from"./CyLUJPQa.js";const n={__name:"simple",setup(r){return s({bodyAttrs:{class:"simple-layout"}}),(e,l)=>(t(),o("div",null,[a(e.$slots,"default")]))}};export{n as default};
