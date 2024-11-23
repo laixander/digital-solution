@@ -1,4 +1,4 @@
-import{h as a}from"./CyLUJPQa.js";/**
+import{h as c}from"./CAZAUUdO.js";/**
  * @license lucide-vue-next v0.460.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -13,9 +13,14 @@ import{h as a}from"./CyLUJPQa.js";/**
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const h=({size:e,strokeWidth:t=2,absoluteStrokeWidth:r,color:s,iconNode:n,name:i,class:w,...l},{slots:c})=>a("svg",{...o,width:e||o.width,height:e||o.height,stroke:s||o.stroke,"stroke-width":r?Number(t)*24/Number(e):t,class:["lucide",`lucide-${d(i??"icon")}`],...l},[...n.map(u=>a(...u)),...c.default?[c.default()]:[]]);/**
+ */const w=({size:e,strokeWidth:t=2,absoluteStrokeWidth:r,color:a,iconNode:i,name:n,class:k,...h},{slots:s})=>c("svg",{...o,width:e||o.width,height:e||o.height,stroke:a||o.stroke,"stroke-width":r?Number(t)*24/Number(e):t,class:["lucide",`lucide-${d(n??"icon")}`],...h},[...i.map(l=>c(...l)),...s.default?[s.default()]:[]]);/**
  * @license lucide-vue-next v0.460.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const m=(e,t)=>(r,{slots:s})=>a(h,{...r,iconNode:t,name:e},s);export{m as c};
+ */const u=(e,t)=>(r,{slots:a})=>c(w,{...r,iconNode:t,name:e},a);/**
+ * @license lucide-vue-next v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const g=u("ShapesIcon",[["path",{d:"M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z",key:"1bo67w"}],["rect",{x:"3",y:"14",width:"7",height:"7",rx:"1",key:"1bkyp8"}],["circle",{cx:"17.5",cy:"17.5",r:"3.5",key:"w3z12y"}]]);export{g as S,u as c};
