@@ -1,1 +1,0 @@
-import{u as s}from"./H-jS_MDM.js";import{o as a,c as t,B as o}from"./CAZAUUdO.js";const p={__name:"special",setup(r){return s({bodyAttrs:{class:"special-layout"}}),(e,l)=>(a(),t("div",null,[o(e.$slots,"default")]))}};export{p as default};
