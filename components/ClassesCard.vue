@@ -1,6 +1,5 @@
 <template>
-    <div
-        class="bg-white border shadow-sm rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+    <div class="bg-white border shadow-sm rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
         <div class="p-4 md:p-5">
             <span class="flex items-center justify-between">
                 <span class="text-gray-900 text-md font-medium text-center dark:text-neutral-300">

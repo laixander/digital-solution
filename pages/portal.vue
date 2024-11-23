@@ -60,7 +60,7 @@
                             HRIS
                         </template>
                         <template #description>
-                            Track tasks and projects, use agile boards, measure progress.
+                            A software application used to store employee information and support various human resource functions.
                         </template>
                         <template #link>
                             <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
@@ -85,7 +85,7 @@
                             CMS
                         </template>
                         <template #description>
-                            Email collaboration and email service desk made easy.
+                            A specialized software platform designed to enhance the administration, delivery, and management of educational courses in higher education institutions.
                         </template>
                         <template #link>
                             <NuxtLink class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"

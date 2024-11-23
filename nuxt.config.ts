@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   app: {
-    baseURL: '/master-ui/',
+    baseURL: '/digital-solution/',
     buildAssetsDir: 'assets'
   },
 

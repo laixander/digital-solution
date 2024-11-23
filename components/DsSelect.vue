@@ -4,7 +4,7 @@
         <div class="relative">
             <!-- Input Field -->
             <div @click="toggleDropdown"
-                class="flex items-center gap-2 py-2 px-3 border rounded-lg cursor-pointer bg-white">
+                class="flex items-center gap-2 py-2 px-3 border rounded-lg cursor-pointer bg-white truncate">
                 <!-- Selected Item -->
                 <span v-if="selectedOption" class="text-gray-800 text-sm">
                     {{ selectedOption }}
@@ -21,7 +21,7 @@
 
             <!-- Dropdown -->
             <ul v-if="isOpen"
-                class="absolute left-0 right-0 z-10 mt-1 p-1 bg-white border rounded-lg shadow-md max-h-48 overflow-y-auto">
+                class="absolute left-0 right-0 z-10 mt-1 p-1 bg-white border rounded-lg shadow-md max-h-52 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track] :bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb] :bg-neutral-500">
                 <li v-for="option in options" :key="option"
                     class="flex items-center justify-between text-sm px-4 py-2 cursor-pointer rounded-md hover:bg-gray-100"
                     @click="selectOption(option)">
