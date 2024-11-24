@@ -1,4 +1,4 @@
-import{c as e}from"./B9-spM5C.js";/**
+import{c as e}from"./CQqXU7iw.js";/**
  * @license lucide-vue-next v0.460.0 - ISC
  *
  * This source code is licensed under the ISC license.
