@@ -4,7 +4,7 @@
             <button id="hs-dropdown-account" type="button"
                 class="rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:text-white"
                 aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                <img class="shrink-0 size-[38px] rounded-full"
+                <img class="shrink-0 size-10 rounded-full"
                     src="/avatar.png"
                     alt="Avatar">
             </button>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="ms-3 mr-auto">
-            <h3 class="font-semibold text-gray-800 dark:text-white">Joselito Baltazar</h3>
+            <h3 class="font-semibold text-gray-800 leading-tight dark:text-white">Joselito Baltazar</h3>
             <p class="text-sm text-gray-400 dark:text-neutral-500">Administrator</p>
         </div>
 

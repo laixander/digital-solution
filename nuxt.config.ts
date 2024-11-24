@@ -7,7 +7,16 @@ export default defineNuxtConfig({
     buildAssetsDir: 'assets'
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      "DM Sans": {
+        wght: '100..900',
+        ital: '100..900',
+      },
+    }
+  },
 
   css: [
     '~/assets/css/main.css'

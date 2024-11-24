@@ -6,13 +6,13 @@
             </div>
         </div>
         <div class="p-4 md:p-6">
-            <span :class="tagColor" class="block mb-1 text-xs font-semibold uppercase">
+            <span :class="tagColor" class="block mb-1 text-xs font-medium uppercase">
                 <slot name="tag"></slot>
             </span>
-            <h3 class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
+            <h3 class="text-lg font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
                 <slot name="appName"></slot>
             </h3>
-            <p class="mt-3 text-gray-500 dark:text-neutral-500">
+            <p class="mt-3 text-sm text-gray-500 dark:text-neutral-500">
                 <slot name="description"></slot>
             </p>
         </div>

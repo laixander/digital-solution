@@ -1,7 +1,7 @@
 <template>
     <AppHeader>
         <template #pageTitle>
-            Courses
+            <DsBreadcrumb :items="item" />
         </template>
     </AppHeader>
 
@@ -61,8 +61,8 @@
 
     <AppContent>
         <template #mainContent>
-            <div class="bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 space-y-4 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
-                <div class="flex items-center justify-between gap-3">
+            <div class="bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                <div class="flex items-center justify-between gap-3 p-4 md:p-5 border-b border-gray-200">
                     <div class="xl:w-full">
                         <div
                             class="inline-flex bg-gray-100 hover:bg-gray-200 rounded-lg transition p-1 dark:bg-neutral-700 dark:hover:bg-neutral-600">
@@ -84,7 +84,6 @@
                             </nav>
                         </div>
                     </div>
-
 
                     <div class="w-full md:flex hidden gap-2">
                         <DsSearchInput />
@@ -153,66 +152,110 @@
                     </div>
                 </div>
                 <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1"
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-4 md:p-5">
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
-                    <img class="w-full object-cover h-32 rounded-t-xl" src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
-                    <div class="p-4 md:p-5">
-                        <p class="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-                        Product
-                        </p>
-                        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                        Better is when everything works together
-                        </h3>
-                    </div>
-                    </a>
+                    <NuxtLink class="group flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" to="/cms/courses/details">
+                        <div class="relative">
+                            <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
+                            <div class="absolute right-2 top-2">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+                                    <BookOpenTextIcon class="shrink-0 size-3.5" />
+                                    Lecture
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <div class="flex items-center gap-3">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-2 rounded-full text-xs font-medium bg-teal-500 text-white">
+                                    MATH 130
+                                </span>
+                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                    Analytical Geometry
+                                </h3>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                        </div>
+                    </NuxtLink>
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
-                    <img class="w-full object-cover h-32 rounded-t-xl" src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
-                    <div class="p-4 md:p-5">
-                        <p class="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-                        Business
-                        </p>
-                        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                        What CFR really is about
-                        </h3>
-                    </div>
-                    </a>
+                    <NuxtLink class="group flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" to="/cms/courses/details">
+                        <div class="relative">
+                            <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
+                            <div class="absolute right-2 top-2">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+                                    <BookOpenTextIcon class="shrink-0 size-3.5" />
+                                    Lecture
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <div class="flex items-center gap-3">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-blue-600 text-white">
+                                    COA 102
+                                </span>
+                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                    Computer Architecture
+                                </h3>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                        </div>
+                    </NuxtLink>
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
-                    <img class="w-full object-cover h-32 rounded-t-xl" src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
-                    <div class="p-4 md:p-5">
-                        <p class="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-                        Business
-                        </p>
-                        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                        Should Product Owners think like entrepreneurs?
-                        </h3>
-                    </div>
-                    </a>
+                    <NuxtLink class="group flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" to="/cms/courses/details">
+                        <div class="relative">
+                            <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
+                            <div class="absolute right-2 top-2">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+                                    <BookOpenTextIcon class="shrink-0 size-3.5" />
+                                    Lecture
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <div class="flex items-center gap-3">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
+                                    ELS 102
+                                </span>
+                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                    Structure of English
+                                </h3>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                        </div>
+                    </NuxtLink>
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" href="#">
-                    <img class="w-full object-cover h-32 rounded-t-xl" src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
-                    <div class="p-4 md:p-5">
-                        <p class="mt-2 text-xs uppercase text-gray-600 dark:text-neutral-400">
-                        Facilitate
-                        </p>
-                        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                        Announcing Front Strategies: Ready-to-use rules
-                        </h3>
-                    </div>
-                    </a>
+                    <NuxtLink class="group flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" to="/cms/courses/details">
+                        <div class="relative">
+                            <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
+                            <div class="absolute right-2 top-2">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
+                                    <BookOpenTextIcon class="shrink-0 size-3.5" />
+                                    Lecture
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-4 md:p-5">
+                            <div class="flex items-center gap-3">
+                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-500 text-white">
+                                    LIT 102
+                                </span>
+                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                    Philippine Literature
+                                </h3>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                        </div>
+                    </NuxtLink>
                     <!-- End Card -->
 
                 </div>
-                <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
+                <div id="segment-2" class="hidden p-4 md:p-5" role="tabpanel" aria-labelledby="segment-item-2">
                     Table
                 </div>
             </div>
@@ -221,8 +264,13 @@
 </template>
 
 <script setup>
-    import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon, XIcon, PlusIcon, CreditCardIcon, TableIcon, SearchIcon } from 'lucide-vue-next';
+    import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon, XIcon, PlusIcon, CreditCardIcon, TableIcon, SearchIcon, BookOpenTextIcon } from 'lucide-vue-next';
     import SelectDepartment from '~/components/DsSelect.vue';
     const departments = ref(['Department of Science', 'Department of Information Technology', 'Department of Engineering', 'Department of Medicine']);
     const department = ref(null);
+
+    import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
+    const item = ref([
+        { title: 'Courses' },
+    ]);
 </script>
