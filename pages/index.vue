@@ -5,7 +5,7 @@
             class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-neutral-900 dark:border-neutral-700">
             <div class="p-4 sm:p-7">
                 <div class="text-center">
-                    <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Sign in</h1>
+                    <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Login</h1>
                     <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
                         Don't have an account yet?
                         <a class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
@@ -65,9 +65,9 @@
                                 <div class="flex items-center">
                                     <div class="flex">
                                         <input id="remember-me" name="remember-me" type="checkbox"
-                                            class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                                            class="shrink-0 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
                                     </div>
-                                    <div class="ms-3">
+                                    <div class="ms-2">
                                         <label for="remember-me" class="text-sm dark:text-white">Remember me</label>
                                     </div>
                                 </div>
@@ -77,8 +77,7 @@
                             <!-- End Checkbox -->
                             <NuxtLink to="/portal">
                                 <button type="submit"
-                                    class="w-full inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4">Sign
-                                    in</button>
+                                    class="w-full inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4">Login</button>
                             </NuxtLink>
                         </div>
                     </form>
