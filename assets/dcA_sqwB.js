@@ -1,1 +1,0 @@
-import{u as s}from"./DMFummGp.js";import{o as a,c as t,r as o}from"./D_uadh25.js";const p={__name:"special",setup(r){return s({bodyAttrs:{class:"special-layout"}}),(e,l)=>(a(),t("div",null,[o(e.$slots,"default")]))}};export{p as default};
