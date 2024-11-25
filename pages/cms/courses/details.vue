@@ -14,7 +14,7 @@
                 <ul class="flex flex-col space-y-1">
                     <li>
                         <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
+                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                             to="/cms">
                             <GaugeIcon class="shrink-0 size-4" />
                             Analytics
@@ -22,7 +22,7 @@
                     </li>
                     <li>
                         <NuxtLink
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white"
+                            class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-700 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white"
                             to="/cms/courses">
                             <ShapesIcon class="shrink-0 size-4" />
                             Courses
@@ -30,7 +30,7 @@
                     </li>
                     <li>
                         <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
+                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                             to="/cms/course-offerings">
                             <MicroscopeIcon class="shrink-0 size-4" />
                             Course Offerings
@@ -38,7 +38,7 @@
                     </li>
                     <li>
                         <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
+                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                             to="/cms/program-offerings">
                             <BookOpenCheckIcon class="shrink-0 size-4" />
                             Program Offerings
@@ -46,7 +46,7 @@
                     </li>
                     <li>
                         <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
+                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                             to="/cms/curricula">
                             <GraduationCapIcon class="shrink-0 size-4" />
                             Curricula
@@ -54,7 +54,7 @@
                     </li>
                     <li>
                         <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
+                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
                             to="/cms/block-sections">
                             <UsersIcon class="shrink-0 size-4" />
                             Block Sections
@@ -81,7 +81,7 @@
                     <div class="p-4 space-y-5">
                         <div class="flex justify-between items-start">
                             <div class="space-y-2">
-                                <p class="text-xs font-medium text-gray-400 uppercase dark:text-neutral-500">English Department</p>
+                                <p class="text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">English Department</p>
                                 <div class="flex items-center gap-3">
                                     <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
                                         ELS 102
@@ -98,7 +98,7 @@
                             </button>
                         </div>
                             
-                        <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                        <p class="text-sm text-gray-600 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
 
                         <!-- <div class="flex items-center gap-2 text-gray-800 font-medium">
                             <BookOpenTextIcon class="shrink-0 size-3.5" />
@@ -110,15 +110,15 @@
                             *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Unit:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">2</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">2</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Hours:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">1</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">1</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Faculty Unit:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">2</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">2</span>
                                 </li>
                             </ul>
                         </div>
@@ -133,19 +133,19 @@
                             *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Unit:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">3</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Hours:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">3</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Type:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">---</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">---</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Faculty Unit:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">3</span>
                                 </li>
                             </ul>
                         </div>
@@ -160,11 +160,11 @@
                             *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Grade Type:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">Points</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">Points</span>
                                 </li>
                                 <li>
                                     <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Week Duration:</span>
-                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">5</span>
+                                    <span class="text-sm text-gray-600 truncate dark:text-neutral-200">5</span>
                                 </li>
                             </ul>
                         </div>
@@ -175,31 +175,33 @@
                         <h3 class="font-semibold text-gray-800">
                             Course Requirements
                         </h3>
-                        <DsDrawer>
+                        <DsModal>
                             <template #buttonLabel>
                                 New Requirement
                             </template>
-                            <template #drawerTitle>
+                            <template #modalTitle>
                                 New Requirement
                             </template>
-                            <template #drawerContent>
-                                <div class="flex flex-col gap-6">
-                                    <div class="space-y-1">
-                                        <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Type:</label>
-                                        <DsRadioGroup
-                                            :items="radioItems"
-                                            groupName="userSelection"
-                                            v-model="selectedOption"
-                                        ></DsRadioGroup>
-                                        <p class="mt-4 hidden">Selected: {{ selectedOption }}</p>
-                                    </div>
-                                    <div class="space-y-1">
-                                        <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Subject:</label>
-                                        <SubjectSelect v-model="subject" :options="subjects" placeholder="Select Subject" />
+                            <template #modalContent>
+                                <div class="p-4">
+                                    <div class="flex flex-col gap-6">
+                                        <div class="space-y-1">
+                                            <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Type:</label>
+                                            <DsRadioGroup
+                                                :items="radioItems"
+                                                groupName="userSelection"
+                                                v-model="selectedOption"
+                                            ></DsRadioGroup>
+                                            <p class="mt-4 hidden">Selected: {{ selectedOption }}</p>
+                                        </div>
+                                        <div class="space-y-1">
+                                            <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Subject:</label>
+                                            <SubjectSelect v-model="subject" :options="subjects" placeholder="Select Subject" />
+                                        </div>
                                     </div>
                                 </div>
                             </template>
-                        </DsDrawer>
+                        </DsModal>
                     </div>
                     <div class="p-4">
                         <div class="flex flex-col">
