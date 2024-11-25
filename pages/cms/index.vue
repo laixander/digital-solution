@@ -61,7 +61,7 @@
 
     <AppContent>
         <template #mainContent>
-            Content Here
+            Content goes here
         </template>
     </AppContent>
 </template>

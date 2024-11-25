@@ -67,198 +67,200 @@
 
     <AppContent>
         <template #mainContent>
-            <div class="flex gap-4">
-                <div
-                    class="w-full max-w-md bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+            <div class="flex flex-col xl:flex-row gap-4">
+                <div class="w-full xl:max-w-md bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                     <div class="relative">
                         <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
-                        <div class="absolute right-2 top-2">
+                        <div class="absolute right-4 top-4">
                             <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
                                 <BookOpenTextIcon class="shrink-0 size-3.5" />
                                 Lecture
                             </span>
                         </div>
                     </div>
+                    <div class="p-4 space-y-5">
+                        <div class="flex justify-between items-start">
+                            <div class="space-y-2">
+                                <p class="text-xs font-medium text-gray-400 uppercase dark:text-neutral-500">English Department</p>
+                                <div class="flex items-center gap-3">
+                                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
+                                        ELS 102
+                                    </span>
+                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                        Structure of English
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-gray-200 text-gray-800 hover:bg-gray-300 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-white/10 dark:text-white dark:hover:bg-white/20 dark:hover:text-white dark:focus:bg-white/20 dark:focus:text-white">
+                                <PenLineIcon class="shrink-0 size-4" />
+                                Edit
+                            </button>
+                        </div>
+                            
+                        <p class="text-sm text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+
+                        <!-- <div class="flex items-center gap-2 text-gray-800 font-medium">
+                            <BookOpenTextIcon class="shrink-0 size-3.5" />
+                            Lecture
+                        </div> -->
+
+                        <div class="w-full bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                            <ul class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700 
+                            *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Unit:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">2</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Hours:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">1</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Lecture Faculty Unit:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">2</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="flex items-center gap-2 text-gray-800 font-medium">
+                            <FlaskConicalIcon class="shrink-0 size-3.5" />
+                            Laboratory
+                        </div> -->
+                        
+                        <div class="w-full bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                            <ul class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700 
+                            *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Unit:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Hours:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Type:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">---</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Laboratory Faculty Unit:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">3</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="flex items-center gap-2 text-gray-800 font-medium">
+                            <FlaskConicalIcon class="shrink-0 size-3.5" />
+                            Laboratory
+                        </div> -->
+                        
+                        <div class="w-full bg-white border border-gray-200 shadow-sm rounded-lg overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                            <ul class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700 
+                            *:inline-flex *:items-center *:justify-between *:gap-3 *:py-3 *:px-4">
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Grade Type:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">Points</span>
+                                </li>
+                                <li>
+                                    <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">Week Duration:</span>
+                                    <span class="text-sm text-gray-500 truncate dark:text-neutral-200">5</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div
-                    class="w-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                <div class="w-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                     <div class="flex items-center justify-between p-4 border-b border-gray-200">
                         <h3 class="font-semibold text-gray-800">
                             Course Requirements
                         </h3>
-                        <button type="button"
-                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white text-nowrap hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                            aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-offcanvas-right"
-                            data-hs-overlay="#hs-offcanvas-right">
-                            New Requirement
-                            <PlusIcon class="shrink-0 size-4" />
-                        </button>
+                        <DsDrawer>
+                            <template #buttonLabel>
+                                New Requirement
+                            </template>
+                            <template #drawerTitle>
+                                New Requirement
+                            </template>
+                            <template #drawerContent>
+                                <div class="flex flex-col gap-6">
+                                    <div class="space-y-1">
+                                        <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Type:</label>
+                                        <DsRadioGroup
+                                            :items="radioItems"
+                                            groupName="userSelection"
+                                            v-model="selectedOption"
+                                        ></DsRadioGroup>
+                                        <p class="mt-4 hidden">Selected: {{ selectedOption }}</p>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <label class="block text-sm font-medium mb-2 dark:text-white"><span class="text-red-600">*</span>Subject:</label>
+                                        <SubjectSelect v-model="subject" :options="subjects" placeholder="Select Subject" />
+                                    </div>
+                                </div>
+                            </template>
+                        </DsDrawer>
                     </div>
                     <div class="p-4">
-                        <!-- <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                            <thead>
-                                <tr>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Type</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Subject</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Status</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Action</th>
-                                </tr>
-                            </thead>
-    
-                            <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-                                <tr>
-                                    <td
-                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                        Co-requisite</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                                        <div class="flex items-center gap-3">
-                                            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">EN 101</span>
-                                            English Communication Skills 1
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
-                                        :class="status === 'Active' ? 'text-green-500' : 'text-amber-500'">
-                                        {{ status }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                        <div class="relative inline-block">
-                                            <input v-model="isActive" type="checkbox" id="hs-default-switch-with-icons" class="peer relative w-[3.25rem] h-7 p-px bg-amber-400 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-gray-200 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-green-600 checked:border-green-600 focus:checked:border-green-600 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-600
-                                          
-                                            before:inline-block before:size-6 before:bg-white checked:before:bg-green-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-neutral-400 dark:checked:before:bg-green-200">
-                                            <label for="hs-default-switch-with-icons" class="sr-only">switch</label>
-                                            <span class="peer-checked:text-white text-amber-500 size-6 absolute top-0.5 start-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <XIcon class="shrink-0 size-3" />
-                                            </span>
-                                            <span class="peer-checked:text-green-600 text-white size-6 absolute top-0.5 end-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <CheckIcon class="shrink-0 size-3" />
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-    
-                                <tr>
-                                    <td
-                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                        Prerequisite</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                                        <div class="flex items-center gap-3">
-                                            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">EN 102</span>
-                                            Introduction to English Language Studies
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
-                                        :class="status2 === 'Active' ? 'text-green-500' : 'text-amber-500'">
-                                        {{ status2 }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                        <div class="relative inline-block">
-                                            <input v-model="isActive2" type="checkbox" id="hs-default-switch-with-icons" class="peer relative w-[3.25rem] h-7 p-px bg-amber-400 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-gray-200 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-green-600 checked:border-green-600 focus:checked:border-green-600 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-600
-                                          
-                                            before:inline-block before:size-6 before:bg-white checked:before:bg-green-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-neutral-400 dark:checked:before:bg-green-200">
-                                            <label for="hs-default-switch-with-icons" class="sr-only">switch</label>
-                                            <span class="peer-checked:text-white text-amber-500 size-6 absolute top-0.5 start-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <XIcon class="shrink-0 size-3" />
-                                            </span>
-                                            <span class="peer-checked:text-green-600 text-white size-6 absolute top-0.5 end-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <CheckIcon class="shrink-0 size-3" />
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td
-                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                        Substitute</td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                                        <div class="flex items-center gap-3">
-                                            <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">AE 101</span>
-                                            Advance English Literature
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
-                                        :class="status3 === 'Active' ? 'text-green-500' : 'text-amber-500'">
-                                        {{ status3 }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                        <div class="relative inline-block">
-                                            <input v-model="isActive3" type="checkbox" id="hs-default-switch-with-icons" class="peer relative w-[3.25rem] h-7 p-px bg-amber-400 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-gray-200 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-green-600 checked:border-green-600 focus:checked:border-green-600 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-600
-                                          
-                                            before:inline-block before:size-6 before:bg-white checked:before:bg-green-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-neutral-400 dark:checked:before:bg-green-200">
-                                            <label for="hs-default-switch-with-icons" class="sr-only">switch</label>
-                                            <span class="peer-checked:text-white text-amber-500 size-6 absolute top-0.5 start-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <XIcon class="shrink-0 size-3" />
-                                            </span>
-                                            <span class="peer-checked:text-green-600 text-white size-6 absolute top-0.5 end-0.5 flex justify-center items-center pointer-events-none transition-colors ease-in-out duration-200 dark:text-neutral-500">
-                                                <CheckIcon class="shrink-0 size-3" />
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-    
-                            </tbody>
-                        </table> -->
-
-                        <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                            <thead>
-                                <tr>
-                                    <th scope="col"
-                                        class="hidden px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        ID</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Type</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Subject</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Status</th>
-                                    <th scope="col"
-                                        class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                        Action</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-                                <tr v-for="row in rows" :key="row.id">
-                                    <td
-                                        class="hidden px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                        {{ row.id }}
-                                    </td>
-                                    <td
-                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                        {{ row.type }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                                        <div class="flex items-center gap-3">
-                                            <span
-                                                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
-                                                {{ row.tag }}
-                                            </span>
-                                            {{ row.subject }}
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
-                                        :class="row.status ? 'text-green-500' : 'text-amber-500'">
-                                        {{ row.status ? 'Active' : 'Suspended' }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                        <!-- Reusable ToggleSwitch Component -->
-                                        <DsToggleSwitch :modelValue="row.status"
-                                            @update:modelValue="(value) => updateStatus(row.id, value)" />
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+                        <div class="flex flex-col">
+                            <div class="-m-1.5 overflow-x-auto">
+                                <div class="p-1.5 min-w-full inline-block align-middle">
+                                    <div class="overflow-hidden">
+                                        <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"
+                                                        class="hidden px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                        ID</th>
+                                                    <th scope="col"
+                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                        Type</th>
+                                                    <th scope="col"
+                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                        Subject</th>
+                                                    <th scope="col"
+                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                        Status</th>
+                                                    <th scope="col"
+                                                        class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                        Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
+                                                <tr v-for="row in rows" :key="row.id">
+                                                    <td
+                                                        class="hidden px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
+                                                        {{ row.id }}
+                                                    </td>
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
+                                                        {{ row.type }}
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                                        <div class="flex items-center gap-3">
+                                                            <span
+                                                                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
+                                                                {{ row.tag }}
+                                                            </span>
+                                                            {{ row.subject }}
+                                                        </div>
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
+                                                        :class="row.status ? 'text-green-500' : 'text-amber-500'">
+                                                        {{ row.status ? 'Active' : 'Suspended' }}
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
+                                                        <!-- Reusable ToggleSwitch Component -->
+                                                        <DsToggleSwitch :modelValue="row.status"
+                                                            @update:modelValue="(value) => updateStatus(row.id, value)" />
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,26 +269,58 @@
 </template>
 
 <script setup>
-import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon, PlusIcon, BookOpenTextIcon } from 'lucide-vue-next';
+import { ref } from "vue";
+import { 
+  GaugeIcon, 
+  ShapesIcon, 
+  BookOpenCheckIcon, 
+  MicroscopeIcon, 
+  GraduationCapIcon, 
+  UsersIcon, 
+  PlusIcon, 
+  BookOpenTextIcon, 
+  PenLineIcon, 
+  FlaskConicalIcon 
+} from 'lucide-vue-next';
 
+// Breadcrumb items
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
 const item = ref([
-    { title: 'Courses', href: './' },
-    { title: 'Details' }
+  { title: 'Courses', href: './' },
+  { title: 'Details' }
 ]);
 
 // Table data
 const rows = ref([
-    { id: 1, type: 'Prerequisite', subject: 'English Communication Skills', tag: 'ENG 101', status: true },
-    { id: 2, type: 'Co-requisite', subject: 'Introduction to English Language Studies', tag: 'ELS 101', status: false },
-    { id: 3, type: 'Substitute', subject: 'Elementary Communication Skills', tag: 'ELC 101', status: false },
+  { id: 1, type: 'Prerequisite', subject: 'English Communication Skills', tag: 'ENG 101', status: true },
+  { id: 2, type: 'Co-requisite', subject: 'Introduction to English Language Studies', tag: 'ELS 101', status: false },
+  { id: 3, type: 'Substitute', subject: 'Elementary Communication Skills', tag: 'ELC 101', status: false },
 ]);
 
 // Update status function
+import DsToggleSwitch from '~/components/DsToggleSwitch.vue';
 const updateStatus = (id, value) => {
-    const row = rows.value.find((row) => row.id === id);
-    if (row) {
-        row.status = value;
-    }
+  const row = rows.value.find((row) => row.id === id);
+  if (row) {
+    row.status = value;
+  }
 };
+
+// Radio group items
+import DsRadioGroup from "~/components/DsRadioGroup.vue";
+const radioItems = [
+  { label: "Prerequisite", value: "prerequisite" },
+  { label: "Co-Requisite", value: "corequisite" },
+  { label: "Substitute", value: "substitute" },
+];
+
+// Selected radio button value
+const selectedOption = ref(null);
+
+// Select input
+import SubjectSelect from '~/components/DsSelect.vue';
+const subjects = ref(['Basic Algebra', 'Natural Science', 'Computer Programming', 'English Literature']);
+
+// Selected input value
+const subject = ref(null);
 </script>
