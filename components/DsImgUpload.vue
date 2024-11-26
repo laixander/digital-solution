@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center">
       <!-- Upload Area -->
-      <div 
+      <div
         class="relative flex flex-col items-center justify-center w-64 h-64 border-2 border-dashed rounded-lg border-gray-300 bg-gray-50 hover:bg-gray-100 cursor-pointer"
         @click="triggerFileInput"
       >
@@ -13,7 +13,7 @@
           @change="onFileChange"
         />
         <div v-if="!preview" class="text-center">
-          <ImageUpIcon class="shrink-0 size-4"/>
+          <ImageUpIcon class="w-12 h-12 text-gray-400" />
           <p class="mt-2 text-sm text-gray-600">Click to upload</p>
         </div>
         <img
@@ -34,35 +34,30 @@
     </div>
   </template>
   
-  <script>
+  <script setup>
+  import { ref } from 'vue';
   import { ImageUpIcon } from 'lucide-vue-next';
-  export default {
-    data() {
-      return {
-        preview: null,
+  
+  const preview = ref(null);
+  const fileInput = ref(null);
+  
+  const triggerFileInput = () => {
+    fileInput.value.click();
+  };
+  
+  const onFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        preview.value = e.target.result;
       };
-    },
-    methods: {
-      triggerFileInput() {
-        this.$refs.fileInput.click();
-      },
-      onFileChange(event) {
-        const file = event.target.files[0];
-        if (file) {
-          const reader = new FileReader();
-          reader.onload = (e) => {
-            this.preview = e.target.result;
-          };
-          reader.readAsDataURL(file);
-        }
-      },
-      removeImage() {
-        this.preview = null;
-        this.$refs.fileInput.value = null;
-      },
-    },
+      reader.readAsDataURL(file);
+    }
+  };
+  
+  const removeImage = () => {
+    preview.value = null;
+    fileInput.value.value = null;
   };
   </script>
-  
-  <style scoped>
-  </style>
