@@ -68,7 +68,7 @@
     <AppContent>
         <template #mainContent>
             <div class="flex flex-col xl:flex-row gap-4">
-                <div class="w-full xl:max-w-2xl p-4 mx-auto bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                <div class="w-full xl:max-w-2xl p-4 mx-auto space-y-4 bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                     <h3 class="text-gray-700 font-semibold">New Course</h3>
                     <DsImgUpload />
                 </div>
