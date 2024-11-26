@@ -5,7 +5,7 @@ export default <Partial<Config>>{
     theme: {
         extend: {
             fontFamily: {
-                'sans': ['"DM Sans", sans-serif'],
+                'sans': ['"Inter", sans-serif'],
             },
         }
     },

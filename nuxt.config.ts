@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      "DM Sans": {
+      "Inter": {
         wght: '100..900',
         ital: '100..900',
       },
