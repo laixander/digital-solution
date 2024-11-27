@@ -68,9 +68,43 @@
     <AppContent>
         <template #mainContent>
             <div class="flex flex-col xl:flex-row gap-4">
-                <div class="w-full xl:max-w-2xl p-4 mx-auto space-y-4 bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+                <div class="w-full xl:max-w-xl p-4 mx-auto space-y-4 bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                     <h3 class="text-gray-700 font-semibold">New Course</h3>
                     <DsImgUpload />
+                    <div class="space-y-1">
+                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                            <span class="text-red-600">*</span>Department:
+                        </label>
+                        <SelectDepartment v-model="department" :options="departments" placeholder="Select Department" />
+                    </div>
+                    <div class="space-y-1">
+                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                            <span class="text-red-600">*</span>Subject:
+                        </label>
+                        <SubjectSelect v-model="subject" :options="subjects" placeholder="Select Subject" />
+                    </div>
+                    <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                        Type:
+                    </label>
+                    <DsRadioGroup
+                        :items="radioItems"
+                        groupName="userSelection"
+                        v-model="selectedOption"
+                    ></DsRadioGroup>
+
+                    <div class="space-y-1">
+                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                            Lecture Unit:
+                        </label>
+                         <!-- Default range and start value -->
+                        <DsRangeSlider :start-value="0" />
+
+                        <!-- Custom range and start value -->
+                        <DsRangeSlider :min-value="10" :max-value="200" :start-value="100" />
+
+                        <!-- Custom range with start value at the minimum -->
+                        <DsRangeSlider :min-value="-50" :max-value="50" :start-value="-50" />
+                    </div>
                 </div>
             </div>
         </template>
@@ -89,6 +123,22 @@ import {
   BookOpenTextIcon, 
   PenLineIcon, 
 } from 'lucide-vue-next';
+
+import SelectDepartment from '~/components/DsSelect.vue';
+    const departments = ref(['Department of Science', 'Department of Information Technology', 'Department of Engineering', 'Department of Medicine']);
+    const department = ref(null);
+
+import SubjectSelect from '~/components/DsSelect.vue';
+    const subjects = ref(['Basic Algebra', 'Natural Science', 'Computer Programming', 'English Literature']);
+    const subject = ref(null);
+
+import DsRadioGroup from "~/components/DsRadioGroup.vue";
+const radioItems = [
+  { label: "Lecture", value: "lecture" },
+  { label: "Laboratory", value: "laboratory" },
+  { label: "Mixed", value: "mixed" },
+];
+const selectedOption = ref(null);
 
 // Breadcrumb items
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
