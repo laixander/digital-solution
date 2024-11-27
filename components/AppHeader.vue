@@ -11,7 +11,7 @@
                     aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-application-sidebar"
                     aria-label="Toggle navigation" data-hs-overlay="#hs-application-sidebar">
                     <span class="sr-only">Toggle Navigation</span>
-                    <PanelRightClose class="shrink-0 size-4" />
+                    <PanelRightCloseIcon class="shrink-0 size-4" />
                 </button>
                 <!-- End Navigation Toggle -->
 
@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-import { EllipsisVerticalIcon, XIcon, PanelRightClose } from 'lucide-vue-next';
+import { EllipsisVerticalIcon, XIcon, PanelRightCloseIcon } from 'lucide-vue-next';
 import CampusSelect from '~/components/DsSelect.vue';
 import LevelSelect from '~/components/DsSelect.vue';
 
