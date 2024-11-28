@@ -72,13 +72,13 @@
                     <div>
                         <h3 class="text-gray-700 font-semibold flex items-center gap-3">
                             <FileTextIcon class="shrink-0 size-8 text-rose-500" strokeWidth="1.5" />
-                            New Course
+                            Edit Course
                         </h3>
                         <div class="bg-gradient-to-r from-gray-200 via-gray-50 to-transparent h-0.5 mt-4 dark:from-neutral-700 dark:via-neutral-900">
                             <div class="bg-rose-500 w-8 h-0.5 dark:bg-neutral-600"></div>
                         </div>
                     </div>
-                    <DsImgUpload />
+                    <DsImgUpload imageURL="/placeholder.jpg" />
                     <div class="space-y-1">
                         <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
                             <span class="text-red-600">*</span>Department:
@@ -108,7 +108,7 @@
                             Lecture Unit:
                         </label>
                         <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="3" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
                     </div>
 
                     <div class="space-y-1">
@@ -116,7 +116,7 @@
                             Lecture Faculty Unit:
                         </label>
                         <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="3" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
                     </div>
 
                     <div class="space-y-1">
@@ -124,7 +124,7 @@
                             Lecture hours:
                         </label>
                         <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="3" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
                     </div>
 
                     <div class="space-y-1">
@@ -132,7 +132,7 @@
                             Course Duration (Week):
                         </label>
                         <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="24" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        <DsRangeSlider :min-value="0" :max-value="24" :step="1" :start-value="12" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
                     </div>
 
                     <div class="space-y-1">
@@ -185,15 +185,15 @@ import {
 
 import SelectDepartment from '~/components/DsSelect.vue';
     const departments = ref(['Department of Science', 'Department of Information Technology', 'Department of Engineering', 'Department of Medicine']);
-    const department = ref(null);
+    const department = ref('Department of Science');
 
 import SubjectSelect from '~/components/DsSelect.vue';
     const subjects = ref(['Basic Algebra', 'Natural Science', 'Computer Programming', 'English Literature']);
-    const subject = ref(null);
+    const subject = ref('Natural Science');
 
     import GradeTypeSelect from '~/components/DsSelect.vue';
     const gradeTypes = ref(['Passed/Failed', 'Grade Letter', 'Grade Points', 'Percentage', 'Descriptor']);
-    const gradeType = ref(null);
+    const gradeType = ref('Grade Points');
 
 import DsRadioGroup from "~/components/DsRadioGroup.vue";
 const typeItems = [
@@ -213,6 +213,6 @@ const gpaOption = ref("yes");
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
 const item = ref([
   { title: 'Courses', href: './' },
-  { title: 'Course' }
+  { title: 'Edit Course' }
 ]);
 </script>
