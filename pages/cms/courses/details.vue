@@ -81,12 +81,12 @@
                     <div class="p-4 space-y-5">
                         <div class="flex justify-between items-start">
                             <div class="space-y-2">
-                                <p class="text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">English Department</p>
+                                <div class="text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">English Department</div>
                                 <div class="flex items-center gap-3">
                                     <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
                                         ELS 102
                                     </span>
-                                    <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
+                                    <h3 class="font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
                                         Structure of English
                                     </h3>
                                 </div>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="w-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                     <div class="flex items-center justify-between p-4 border-b border-gray-200">
-                        <h3 class="font-semibold text-gray-800">
+                        <h3 class="font-bold text-gray-800">
                             Course Requirements
                         </h3>
                         <DsModal>
@@ -230,10 +230,6 @@
                                             </thead>
                                             <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
                                                 <tr v-for="row in rows" :key="row.id">
-                                                    <td
-                                                        class="hidden px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                                        {{ row.id }}
-                                                    </td>
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
                                                         {{ row.type }}

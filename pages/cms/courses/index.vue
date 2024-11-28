@@ -125,7 +125,11 @@
                     <!-- Card -->
                     <NuxtLink v-for="item in items" :key="item.id" class="group flex flex-col bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800" to="/cms/courses/details">
                         <div class="relative">
-                            <img class="w-full object-cover h-32" src="/placeholder.jpg" alt="Blog Image">
+                            <img
+                                :src="item.image"
+                                :alt="item.subject"
+                                class="w-full object-cover h-32"
+                            />
                             <div class="absolute right-2 top-2">
                                 <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white">
                                     <component :is="item.icon" class="shrink-0 size-3.5" />
@@ -133,16 +137,19 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="p-4 md:p-5">
-                            <div class="flex items-center gap-3">
-                                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-500 text-white" :class="item.tag.bgcolor">
-                                    {{ item.tag.name }}
-                                </span>
-                                <h3 class="font-semibold text-gray-800 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-white">
-                                    {{ item.subject }}
-                                </h3>
+                        <div class="p-4 md:p-5 space-y-3">
+                            <div class="space-y-2">
+                                <div class="text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">{{ item.department }}</div>
+                                <div class="flex items-center gap-3">
+                                    <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium text-white" :class="item.tag.bgcolor">
+                                        {{ item.tag.name }}
+                                    </span>
+                                    <h3 class="font-bold truncate text-gray-700 group-hover:text-gray-800 dark:text-neutral-300 dark:group-hover:text-white">
+                                        {{ item.subject }}
+                                    </h3>
+                                </div>
                             </div>
-                            <p class="text-sm text-gray-600 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
+                            <p class="text-sm text-gray-600 mt-3 line-clamp-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam eligendi adipisci.</p>
                         </div>
                     </NuxtLink>
                     <!-- End Card -->
@@ -151,8 +158,8 @@
                 <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
 
                     <div class="flex flex-col">
-                        <div class="-m-1.5 overflow-x-auto">
-                            <div class="p-1.5 min-w-full inline-block align-middle">
+                        <div class="overflow-x-auto">
+                            <div class="min-w-full inline-block align-middle">
                                 <div class="overflow-hidden">
                                     <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
                                         <thead class="bg-gray-50 dark:bg-neutral-800">
@@ -193,14 +200,16 @@
                                         <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
                                             <tr v-for="item in items" :key="item.id">
                                                 <td
-                                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-200">
+                                                    class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                     <div class="flex items-center gap-3">
                                                         <span
                                                             class="inline-flex items-center gap-x-1.5 py-1.5 px-2.5 rounded-full text-xs font-medium text-white"
                                                             :class="item.tag.bgcolor">
                                                             {{ item.tag.name }}
                                                         </span>
-                                                        {{ item.subject }}
+                                                        <span class="font-semibold">
+                                                            {{ item.subject }}
+                                                        </span>
                                                     </div>
                                                 </td>
                                                 <td
@@ -217,7 +226,7 @@
                                                 </td>
                                                 <td
                                                     class="px-6 py-4 whitespace-nowrap text-sm text-end text-gray-800 dark:text-neutral-200">
-                                                    <NuxtLink to="courses/details" class="py-1 px-2 inline-flex justify-center items-center gap-2 rounded-lg border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                                    <NuxtLink to="/cms/courses/details" class="py-1 px-2 inline-flex justify-center items-center gap-2 rounded-lg border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                                         <FileTextIcon class="shrink-0 size-4" />
                                                         View
                                                     </NuxtLink>
@@ -232,23 +241,23 @@
                     <!-- Footer -->
                     <div class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-t border-gray-200 dark:border-neutral-700">
                         <div>
-                        <p class="text-sm text-gray-600 dark:text-neutral-400">
-                            <span class="font-semibold text-gray-800 dark:text-neutral-200">10</span> results
-                        </p>
+                            <p class="text-sm text-gray-600 dark:text-neutral-400">
+                                <span class="font-semibold text-gray-800 dark:text-neutral-200">10</span> results
+                            </p>
                         </div>
 
                         <div>
-                        <div class="inline-flex gap-x-2">
-                            <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-                            <ArrowLeftIcon class="shrink-0 size-4" />
-                            Prev
-                            </button>
+                            <div class="inline-flex gap-x-2">
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+                                <ArrowLeftIcon class="shrink-0 size-4" />
+                                Prev
+                                </button>
 
-                            <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
-                            Next
-                            <ArrowRightIcon class="shrink-0 size-4" />
-                            </button>
-                        </div>
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+                                Next
+                                <ArrowRightIcon class="shrink-0 size-4" />
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <!-- End Footer -->
@@ -283,6 +292,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Grade Points',
     icon: BookOpenTextIcon,
+    image: '/placeholder.jpg',
   },
   {
     id: 2,
@@ -292,6 +302,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Percentage',
     icon: BookOpenTextIcon,
+    image: '/placeholder-2.jpg',
   },
   {
     id: 3,
@@ -301,6 +312,7 @@ const items = ref([
     type: 'Mixed',
     gradeType: 'Grade Points',
     icon: BlendIcon,
+    image: '/placeholder-3.jpg',
   },
   {
     id: 4,
@@ -310,6 +322,7 @@ const items = ref([
     type: 'Laboratory',
     gradeType: 'Pass/Fail',
     icon: FlaskConicalIcon,
+    image: '/placeholder-4.jpg',
   },
   {
     id: 5,
@@ -319,6 +332,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Grade Points',
     icon: BookOpenTextIcon,
+    image: '/placeholder-5.jpg',
   },
   {
     id: 6,
@@ -328,6 +342,7 @@ const items = ref([
     type: 'Laboratory',
     gradeType: 'Percentage',
     icon: FlaskConicalIcon,
+    image: '/placeholder-6.jpg',
   },
   {
     id: 7,
@@ -337,6 +352,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Grade Points',
     icon: BookOpenTextIcon,
+    image: '/placeholder-7.jpg',
   },
   {
     id: 8,
@@ -346,6 +362,7 @@ const items = ref([
     type: 'Mixed',
     gradeType: 'Grade Points',
     icon: BlendIcon,
+    image: '/placeholder-8.jpg',
   },
   {
     id: 9,
@@ -355,6 +372,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Grade Points',
     icon: BookOpenTextIcon,
+    image: '/placeholder-9.jpg',
   },
   {
     id: 10,
@@ -364,6 +382,7 @@ const items = ref([
     type: 'Lecture',
     gradeType: 'Pass/Fail',
     icon: BookOpenTextIcon,
+    image: '/placeholder-10.jpg',
   },
 ]);
 </script>
