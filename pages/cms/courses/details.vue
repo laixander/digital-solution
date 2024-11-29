@@ -203,59 +203,57 @@
                             </template>
                         </DsModal>
                     </div>
-                    <div class="p-4">
-                        <div class="flex flex-col">
-                            <div class="-m-1.5 overflow-x-auto">
-                                <div class="p-1.5 min-w-full inline-block align-middle">
-                                    <div class="overflow-hidden">
-                                        <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col"
-                                                        class="hidden px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                                        ID</th>
-                                                    <th scope="col"
-                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                                        Type</th>
-                                                    <th scope="col"
-                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                                        Subject</th>
-                                                    <th scope="col"
-                                                        class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                                        Status</th>
-                                                    <th scope="col"
-                                                        class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
-                                                        Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-                                                <tr v-for="row in rows" :key="row.id">
-                                                    <td
-                                                        class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
-                                                        {{ row.type }}
-                                                    </td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
-                                                        <div class="flex items-center gap-3">
-                                                            <span
-                                                                class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
-                                                                {{ row.tag }}
-                                                            </span>
-                                                            {{ row.subject }}
-                                                        </div>
-                                                    </td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
-                                                        :class="row.status ? 'text-green-500' : 'text-amber-500'">
-                                                        {{ row.status ? 'Active' : 'Suspended' }}
-                                                    </td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                                                        <!-- Reusable ToggleSwitch Component -->
-                                                        <DsToggleSwitch :modelValue="row.status"
-                                                            @update:modelValue="(value) => updateStatus(row.id, value)" />
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                    <div class="flex flex-col">
+                        <div class="overflow-x-auto">
+                            <div class="min-w-full inline-block align-middle">
+                                <div class="overflow-hidden">
+                                    <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
+                                        <thead class="bg-gray-50 dark:bg-neutral-800">
+                                            <tr>
+                                                <th scope="col"
+                                                    class="hidden px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                    ID</th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                    Type</th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                    Subject</th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                    Status</th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-end text-xs font-medium text-gray-500 uppercase dark:text-neutral-500">
+                                                    Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
+                                            <tr v-for="row in rows" :key="row.id">
+                                                <td
+                                                    class="px-6 py-4 whitespace-nowrap text-sm font-medium uppercase text-gray-800 dark:text-neutral-200">
+                                                    {{ row.type }}
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                                    <div class="flex items-center gap-3">
+                                                        <span
+                                                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-red-500 text-white">
+                                                            {{ row.tag }}
+                                                        </span>
+                                                        {{ row.subject }}
+                                                    </div>
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-sm dark:text-neutral-200"
+                                                    :class="row.status ? 'text-green-500' : 'text-amber-500'">
+                                                    {{ row.status ? 'Active' : 'Suspended' }}
+                                                </td>
+                                                <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
+                                                    <!-- Reusable ToggleSwitch Component -->
+                                                    <DsToggleSwitch :modelValue="row.status"
+                                                        @update:modelValue="(value) => updateStatus(row.id, value)" />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 <template>
     <AppHeader>
         <template #pageTitle>
-            Analytics
+            <DsBreadcrumb :items="item" />
         </template>
     </AppHeader>
 
@@ -60,11 +60,66 @@
 
     <AppContent>
         <template #mainContent>
-            Content Here
+
+            <DsCard>
+
+                <DsCardHeader>
+                    <template #start>
+                        <DsSwitchDisplay v-model="activeTab" />
+                    </template>
+                    <template #center>
+                        <DsSearchInput class="lg:w-[600px]" />
+                    </template>
+                    <template #end>
+                        <DsButton primary small label="New Course Offering">
+                            <template #trailing-icon>
+                                <PlusIcon class="flex-shrink-0 size-4" />
+                            </template>
+                        </DsButton>
+                    </template>
+                </DsCardHeader>
+
+                <DsCardBody>
+                    <DsSwitchDisplayContent :activeTab="activeTab">
+                        <template #card>
+                            <div>
+
+                                <DsCard>
+                                    <DsCardImage>
+                                        <template #img>
+                                            <img src="/placeholder.jpg" class="w-full object-cover h-32">
+                                        </template>
+                                    </DsCardImage>
+                                    <DsCardBody>
+                                        <h3 class="text-gray-800 font-bold">Card Title</h3>
+                                        <p class="text-gray-500 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga asperiores quos laboriosam. Totam sapiente labore voluptatum, ut quae sequi.</p>
+                                    </DsCardBody>
+                                </DsCard>
+
+                            </div>
+                        </template>
+                        <template #table>
+                            <div>Table Display Content</div>
+                        </template>
+                    </DsSwitchDisplayContent>
+                </DsCardBody>
+            </DsCard>
+
         </template>
     </AppContent>
 </template>
 
 <script setup>
-    import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon } from 'lucide-vue-next';
+import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon, PlusIcon } from 'lucide-vue-next';
+
+// Breadcrumb
+import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
+const item = ref([
+    { title: 'Course Offering' },
+]);
+
+import DsSwitchDisplay from '~/components/DsSwitchDisplay.vue';
+import DsSwitchDisplayContent from '~/components/DsSwitchDisplayContent.vue';
+
+const activeTab = ref('segment-1');
 </script>
