@@ -1,0 +1,1 @@
+import{u as s}from"./CDpJpzBy.js";import{o as a,c as t,g as o}from"./DMvhOt_d.js";const p={__name:"special",setup(r){return s({bodyAttrs:{class:"special-layout"}}),(e,l)=>(a(),t("div",null,[o(e.$slots,"default")]))}};export{p as default};
