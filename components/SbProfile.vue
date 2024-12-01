@@ -5,7 +5,7 @@
                 class="rounded-full border border-transparent text-gray-800 focus:outline-none disabled:opacity-50 disabled:pointer-events-none dark:text-white"
                 aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                 <img class="shrink-0 size-10 rounded-full"
-                    src="/avatar.png"
+                    src="/img/avatar.png"
                     alt="Avatar">
             </button>
             <div class="hs-dropdown-menu border border-gray-200 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[235px] bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"

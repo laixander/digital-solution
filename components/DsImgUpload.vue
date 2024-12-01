@@ -2,8 +2,8 @@
 	<div class="flex flex-col items-center gap-4">
 		<!-- Upload Area -->
 		<div class="transition ease-in-out duration-200 group relative flex flex-col items-center justify-center w-full h-64 border-2 border-dashed rounded-lg border-gray-200 bg-gray-50 hover:bg-blue-50 hover:border-blue-200 hover:border-solid cursor-pointer"
-		:style="preview ? { backgroundImage: `url(${preview})`, backgroundSize: 'cover', backgroundPosition: 'center', borderStyle: 'solid' } : {}"
-      @click="triggerFileInput">
+		:style="preview ? { backgroundImage: `url(${preview})`, backgroundSize: 'cover', backgroundPosition: 'center', borderStyle: 'none' } : {}"
+      	@click="triggerFileInput">
 			<input type="file" accept="image/*" class="hidden" ref="fileInput" @change="onFileChange" />
 			<div v-if="!preview" class="flex flex-col items-center gap-4">
 				<ImageIcon class="w-12 h-12 text-gray-300 transition ease-in-out duration-200 group-hover:text-blue-500 group-hover:scale-125" strokeWidth="1.5" />

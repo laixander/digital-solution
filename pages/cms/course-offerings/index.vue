@@ -10,51 +10,7 @@
             <LogoCMS className="size-16" />
         </template>
         <template #menu>
-            <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
-                <ul class="flex flex-col space-y-1">
-                    <li>
-                        <NuxtLink class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/">
-                            <GaugeIcon class="shrink-0 size-4" />
-                            Analytics
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/courses">
-                            <ShapesIcon class="shrink-0 size-4" />
-                            Courses
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-700 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white">
-                            <MicroscopeIcon class="shrink-0 size-4" />
-                            Course Offerings
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/program-offerings">
-                            <BookOpenCheckIcon class="shrink-0 size-4" />
-                            Program Offerings
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/curricula">
-                            <GraduationCapIcon class="shrink-0 size-4" />
-                            Curricula
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/block-sections">
-                            <UsersIcon class="shrink-0 size-4" />
-                            Block Sections
-                        </NuxtLink>
-                    </li>
-                </ul>
-            </nav>
+            <DsMenu :menu-items="menuItems" />
         </template>
     </AppSidebar>
 
@@ -62,7 +18,6 @@
         <template #mainContent>
 
             <DsCard>
-
                 <DsCardHeader>
                     <template #start>
                         <DsSwitchDisplay v-model="activeTab" />
@@ -82,24 +37,40 @@
                 <DsCardBody>
                     <DsSwitchDisplayContent :activeTab="activeTab">
                         <template #card>
-                            <div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
-                                <DsCard>
-                                    <DsCardImage>
-                                        <template #img>
-                                            <img src="/placeholder.jpg" class="w-full object-cover h-32">
-                                        </template>
-                                    </DsCardImage>
-                                    <DsCardBody>
-                                        <h3 class="text-gray-800 font-bold">Card Title</h3>
-                                        <p class="text-gray-500 text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga asperiores quos laboriosam. Totam sapiente labore voluptatum, ut quae sequi.</p>
-                                    </DsCardBody>
-                                </DsCard>
+                                <NuxtLink v-for="n in 10">
+                                    <DsCard :hoverEffect="true">
+                                        <DsCardImage>
+                                            <template #img>
+                                                <img src="/img/placeholder.jpg" class="w-full object-cover h-32">
+                                            </template>
+                                        </DsCardImage>
+                                        <DsCardBody>
+                                            <h3 class="text-gray-800 font-bold">Card Title</h3>
+                                            <p class="text-gray-500 text-sm font-light line-clamp-2">Lorem ipsum dolor
+                                                sit amet consectetur
+                                                adipisicing elit. Facere fuga asperiores quos laboriosam. Totam sapiente
+                                                labore voluptatum, ut quae
+                                                sequi.</p>
+                                        </DsCardBody>
+                                    </DsCard>
+                                </NuxtLink>
 
                             </div>
                         </template>
                         <template #table>
-                            <div>Table Display Content</div>
+
+                            <DsTable :columns="columns" :rows="rows">
+                                <template #actions="{ row }">
+                                    <NuxtLink :to="'/cms/course-offerings/details/' + row.id"
+                                        class="py-1 px-2 inline-flex justify-center items-center gap-2 rounded-lg border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-neutral-900 dark:hover:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                        <FileTextIcon class="shrink-0 size-4" />
+                                        View
+                                    </NuxtLink>
+                                </template>
+                            </DsTable>
+
                         </template>
                     </DsSwitchDisplayContent>
                 </DsCardBody>
@@ -110,8 +81,8 @@
 </template>
 
 <script setup>
-import { GaugeIcon, ShapesIcon, BookOpenCheckIcon, MicroscopeIcon, GraduationCapIcon, UsersIcon, PlusIcon } from 'lucide-vue-next';
-
+import { PlusIcon, FileTextIcon } from 'lucide-vue-next';
+import { menuItems } from "@/data/cms-menu";
 // Breadcrumb
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
 const item = ref([
@@ -122,4 +93,29 @@ import DsSwitchDisplay from '~/components/DsSwitchDisplay.vue';
 import DsSwitchDisplayContent from '~/components/DsSwitchDisplayContent.vue';
 
 const activeTab = ref('segment-1');
+
+const columns = [
+    { label: 'Subject', field: 'subject', align: 'start', sortable: true },
+    { label: 'Department', field: 'department', align: 'start', sortable: true },
+    { label: 'Type', field: 'type', align: 'start' },
+    { label: 'Grade Type', field: 'gradeType', align: 'start' },
+    { label: 'Action', field: 'actions', align: 'end', slotName: 'actions' }
+];
+
+const rows = [
+    {
+        id: 1,
+        subject: 'Mathematics',
+        department: 'Science',
+        type: 'Lecture',
+        gradeType: 'Numeric'
+    },
+    {
+        id: 2,
+        subject: 'History',
+        department: 'Humanities',
+        type: 'Seminar',
+        gradeType: 'Pass/Fail'
+    }
+];
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 space-y-4">
+    <div class="p-4 md:p-5 space-y-2">
         <slot>
             Content Goes here
         </slot>

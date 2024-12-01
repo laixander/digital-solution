@@ -11,7 +11,26 @@
 defineProps({
     showExtra: {
         type: Boolean,
-        default: true, // Set to `true` by default to show the extra by default
+        default: false, // Set to `true` by default to show the extra by default
     },
 });
 </script>
+
+<!--
+Extra Hidden by Default:
+<DsCardImage>
+  <template #img>
+    <img src="example.jpg" alt="Example" />
+  </template>
+</DsCardImage>
+
+Showing Extra:
+<DsCardImage :showExtra="true">
+  <template #img>
+    <img src="example.jpg" alt="Example" />
+  </template>
+  <DsTag>
+    Extra Tag
+  </DsTag>
+</DsCardImage>
+-->

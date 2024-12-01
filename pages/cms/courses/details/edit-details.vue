@@ -10,58 +10,7 @@
             <LogoCMS className="size-16" />
         </template>
         <template #menu>
-            <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
-                <ul class="flex flex-col space-y-1">
-                    <li>
-                        <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms">
-                            <GaugeIcon class="shrink-0 size-4" />
-                            Analytics
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink
-                            class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-700 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white"
-                            to="/cms/courses">
-                            <ShapesIcon class="shrink-0 size-4" />
-                            Courses
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/course-offerings">
-                            <MicroscopeIcon class="shrink-0 size-4" />
-                            Course Offerings
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/program-offerings">
-                            <BookOpenCheckIcon class="shrink-0 size-4" />
-                            Program Offerings
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/curricula">
-                            <GraduationCapIcon class="shrink-0 size-4" />
-                            Curricula
-                        </NuxtLink>
-                    </li>
-                    <li>
-                        <NuxtLink
-                            class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                            to="/cms/block-sections">
-                            <UsersIcon class="shrink-0 size-4" />
-                            Block Sections
-                        </NuxtLink>
-                    </li>
-                </ul>
-            </nav>
+            <DsMenu :menu-items="menuItems" />
         </template>
     </AppSidebar>
 
@@ -78,7 +27,7 @@
                             <div class="bg-rose-500 w-8 h-0.5 dark:bg-neutral-600"></div>
                         </div>
                     </div>
-                    <DsImgUpload imageURL="/placeholder.jpg" />
+                    <DsImgUpload imageURL="/digital-solution/img/placeholder.jpg" />
                     <div class="space-y-1">
                         <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
                             <span class="text-red-600">*</span>Department:
@@ -174,14 +123,9 @@
 <script setup>
 import { ref } from "vue";
 import { 
-  GaugeIcon, 
-  ShapesIcon, 
-  BookOpenCheckIcon, 
-  MicroscopeIcon, 
-  GraduationCapIcon, 
-  UsersIcon, 
   FileTextIcon,
 } from 'lucide-vue-next';
+import { menuItems } from "@/data/cms-menu";
 
 import SelectDepartment from '~/components/DsSelect.vue';
     const departments = ref(['Department of Science', 'Department of Information Technology', 'Department of Engineering', 'Department of Medicine']);
@@ -212,7 +156,7 @@ const gpaOption = ref("yes");
 // Breadcrumb items
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
 const item = ref([
-  { title: 'Courses', href: './' },
+  { title: 'Courses', href: '/cms/courses' },
   { title: 'Edit Course' }
 ]);
 </script>
