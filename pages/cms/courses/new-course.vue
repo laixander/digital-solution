@@ -103,28 +103,64 @@
                         ></DsRadioGroup>
                     </div>
 
-                    <div class="space-y-1">
-                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
-                            Lecture Unit:
-                        </label>
-                        <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                    <div v-if="typeOption === 'lecture' || typeOption === 'mixed'" class="space-y-6">
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Lecture Unit:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Lecture Faculty Unit:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Lecture hours:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
                     </div>
 
-                    <div class="space-y-1">
-                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
-                            Lecture Faculty Unit:
-                        </label>
-                        <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
-                    </div>
+                    <div v-if="typeOption === 'laboratory' || typeOption === 'mixed'" class="space-y-6">
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Laboratory Unit:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
 
-                    <div class="space-y-1">
-                        <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
-                            Lecture hours:
-                        </label>
-                        <!-- Custom range and start value -->
-                        <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Laboratory hours:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Laboratory Type:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="block text-sm text-gray-700 font-medium mb-2 dark:text-white">
+                                Laboratory Faculty Unit:
+                            </label>
+                            <!-- Custom range and start value -->
+                            <DsRangeSlider :min-value="0" :max-value="3" :step="1" :start-value="0" :showNumberInput="true" activeColor="#2563eb" inactiveColor="#d1d5db" />
+                        </div>
                     </div>
 
                     <div class="space-y-1">
