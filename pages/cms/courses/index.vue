@@ -18,7 +18,7 @@
         <template #mainContent>
 
             <DsCard>
-                <DsCardHeader>
+                <DsCardHeader full>
                     <template #start>
                         <DsSwitchDisplay v-model="activeTab" />
                     </template>
@@ -84,7 +84,7 @@
                         </template>
                         <template #table>
 
-                            <DsTable :columns="columns" :rows="data">
+                            <DsTable :columns="columns" :rows="data" pagination>
                                 <template #subject="{ row }">
                                     <div class="flex items-center gap-3">
                                       <span

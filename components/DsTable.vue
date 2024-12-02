@@ -4,7 +4,7 @@
 			class="overflow-x-auto [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
 			<div class="min-w-full inline-block align-middle">
 				<div class="overflow-hidden">
-					<table class="min-w-full divide-y divide-gray-200 border-b border-gray-200 dark:divide-neutral-700">
+					<table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
 						<!-- Table Head -->
 						<thead class="bg-gray-50 dark:bg-neutral-800">
 							<tr>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	</div>
-	<div v-if="isVisible" class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center">
+	<div v-if="pagination" class="px-6 py-4 grid gap-3 border-t border-gray-200 md:flex md:justify-between md:items-center">
 		<div>
 			<p class="text-sm text-gray-600 dark:text-neutral-400">
 				<span class="font-semibold text-gray-800 dark:text-neutral-200">10</span> results
@@ -82,7 +82,7 @@ import { ref, computed } from 'vue';
 const props = defineProps({
 	columns: { type: Array, required: true },
 	rows: { type: Array, required: true },
-	isVisible: { 
+	pagination: { 
 		type: Boolean, 
 		default: false 
 	},

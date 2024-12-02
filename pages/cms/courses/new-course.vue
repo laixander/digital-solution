@@ -249,6 +249,6 @@ const gpaOption = ref("yes");
 import DsBreadcrumb from '~/components/DsBreadcrumb.vue';
 const item = ref([
   { title: 'Courses', href: './' },
-  { title: 'Course' }
+  { title: 'New Course' }
 ]);
 </script>
