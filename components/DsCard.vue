@@ -2,7 +2,7 @@
     <div
         :class="[
         'bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden',
-        hoverEffect && 'group cursor-pointer hover:shadow-xl hover:scale-105 focus:outline-none focus:shadow-md transition ease-in-out duration-200',
+        hoverEffect && 'group cursor-pointer hover:bg-gray-50 hover:shadow-xl hover:scale-105 active:scale-100 active:bg-white transition ease-in-out duration-200',
         sameHeight && 'h-full',
         ]"
     >
