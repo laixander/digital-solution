@@ -14,8 +14,16 @@
             </div>
             <!-- End Title -->
 
-            <div class="mt-5 max-w-3xl text-center mx-auto">
+            <div class="mt-5 max-w-3xl text-center mx-auto space-y-10">
                 <p class="text-gray-600 dark:text-neutral-400">Manage your applications in one place. Select from the list of applications to enter the management console.</p>
+
+                <NuxtLink to="/docs" class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4 cursor-pointer"><BookOpenIcon class="shrink-0 size-5" /> Documentation</NuxtLink>
+
+                <!-- <DsButton primary label="Documentation">
+                    <template #leading-icon>
+                        <BookOpenIcon class="shrink-0 size-5" />
+                    </template>
+                </DsButton> -->
             </div>
 
 
@@ -113,5 +121,5 @@ definePageMeta({
     layout: 'simple',
 });
 
-import { ShapesIcon, UserRoundCheckIcon, NotebookPenIcon } from 'lucide-vue-next';
+import { ShapesIcon, UserRoundCheckIcon, NotebookPenIcon, BookTextIcon, BookOpenIcon } from 'lucide-vue-next';
 </script>
