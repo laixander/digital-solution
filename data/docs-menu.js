@@ -1,12 +1,16 @@
 export const menuItems = [
     {
+        label: "Home",
+        to: "/docs",
+        icon: "HomeIcon",
+    },
+    {
         label: "Actions",
-        to: "/cms",
         icon: "MousePointerClickIcon",
         children: [
             {
                 label: "Button",
-                to: "",
+                to: "/docs/button",
             },
             {
                 label: "Dropdown",

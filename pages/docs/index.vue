@@ -15,7 +15,11 @@
 
     <AppContent>
         <template #mainContent>
-            Content goes here
+            <DsCard simple>
+                <DsCardBody>
+                    Home
+                </DsCardBody>
+            </DsCard>
         </template>
     </AppContent>
 </template>

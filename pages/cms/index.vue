@@ -16,11 +16,12 @@
 
     <AppContent>
         <template #mainContent>
-            Content goes here
+            <Button icon>Red Solid Button</Button>
         </template>
     </AppContent>
 </template>
 
 <script setup>
     import { menuItems } from "@/data/cms-menu";
+    import { HomeIcon } from "lucide-vue-next";
 </script>
