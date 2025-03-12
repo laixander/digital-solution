@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as n,h as r,d as c}from"./DlnmRhCc.js";const _={},a={class:"p-4 md:p-5 space-y-2"};function d(o,e){return s(),n("div",a,[r(o.$slots,"default",{},()=>[e[0]||(e[0]=c(" Content Goes here "))])])}const l=t(_,[["render",d]]);export{l as _};
