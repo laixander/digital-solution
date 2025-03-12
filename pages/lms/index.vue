@@ -16,36 +16,16 @@
 
     <AppContent>
         <template #mainContent>
-            <div class="bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 space-y-4 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
+            <div
+                class="bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 space-y-4 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400">
                 <div class="flex items-center justify-between gap-3">
                     <div class="xl:w-full">
-                        <div
-                            class="inline-flex bg-gray-100 hover:bg-gray-200 rounded-lg transition p-1 dark:bg-neutral-700 dark:hover:bg-neutral-600">
-                            <nav class="flex gap-x-1" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
-                                <button type="button"
-                                    class="hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400 dark:hs-tab-active:bg-gray-800 p-2 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 font-medium rounded-md hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-white dark:focus:text-white active"
-                                    id="segment-item-1" aria-selected="true" data-hs-tab="#segment-1"
-                                    aria-controls="segment-1" role="tab">
-                                    <span class="sr-only">Grid</span>
-                                    <CreditCardIcon class="shrink-0 size-4" />
-                                </button>
-                                <button type="button"
-                                    class="hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400 dark:hs-tab-active:bg-gray-800 p-2 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 font-medium rounded-md hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-white dark:focus:text-white"
-                                    id="segment-item-2" aria-selected="false" data-hs-tab="#segment-2"
-                                    aria-controls="segment-2" role="tab">
-                                    <span class="sr-only">Table</span>
-                                    <TableIcon class="shrink-0 size-4" />
-                                </button>
-                            </nav>
+                        <div class="text-gray-800">
+                            List of Instructors
                         </div>
                     </div>
 
-
-                    <div class="w-full md:block hidden">
-                        <DsSearchInput />
-                    </div>
-
-                    <div class="xl:w-full flex justify-end gap-2">
+                    <div class="xl:w-full flex justify-end items-center gap-2">
 
                         <div class="md:hidden">
                             <button type="button"
@@ -67,24 +47,79 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 focus:outline-hidden focus:border-blue-600 focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:text-blue-500 dark:focus:border-blue-600">
+
+                        <div class="flex items-center gap-3">
+                            <div class="text-sm text-gray-800">
+                                On Leave 
+                            </div>
+                            <DsToggleSwitch />
+                        </div>
+                        
+
+                        <button type="button"
+                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 focus:outline-hidden focus:border-blue-600 focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:text-blue-500 dark:focus:border-blue-600">
                             Request Edit
                             <FilePenLine class="shrink-0 size-4" />
                         </button>
-                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 focus:outline-hidden focus:border-blue-600 focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:text-blue-500 dark:focus:border-blue-600">
+                        <button type="button"
+                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 text-gray-500 hover:border-blue-600 hover:text-blue-600 focus:outline-hidden focus:border-blue-600 focus:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:border-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 dark:hover:border-blue-600 dark:focus:text-blue-500 dark:focus:border-blue-600">
                             Request Extension
                             <CalendarClock class="shrink-0 size-4" />
                         </button>
-
+                        <div
+                            class="inline-flex bg-gray-100 hover:bg-gray-200 rounded-lg transition p-1 dark:bg-neutral-700 dark:hover:bg-neutral-600">
+                            <nav class="flex gap-x-1" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+                                <button type="button"
+                                    class="hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400 dark:hs-tab-active:bg-gray-800 p-2 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 font-medium rounded-md hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-white dark:focus:text-white active"
+                                    id="segment-item-1" aria-selected="true" data-hs-tab="#segment-1"
+                                    aria-controls="segment-1" role="tab">
+                                    <span class="sr-only">Grid</span>
+                                    <CreditCardIcon class="shrink-0 size-4" />
+                                </button>
+                                <button type="button"
+                                    class="hs-tab-active:bg-white hs-tab-active:text-gray-700 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400 dark:hs-tab-active:bg-gray-800 p-2 inline-flex items-center gap-x-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 font-medium rounded-md hover:hover:text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:text-white dark:focus:text-white"
+                                    id="segment-item-2" aria-selected="false" data-hs-tab="#segment-2"
+                                    aria-controls="segment-2" role="tab">
+                                    <span class="sr-only">Table</span>
+                                    <TableIcon class="shrink-0 size-4" />
+                                </button>
+                            </nav>
+                        </div>
                     </div>
                 </div>
+
+                <div class="mt-2 bg-gray-50 border border-gray-200 text-sm text-gray-600 rounded-lg p-4 dark:bg-white/10 dark:border-white/10 dark:text-neutral-400 flex gap-2 items-center" role="alert" tabindex="-1" aria-labelledby="hs-soft-color-secondary-label">
+                    <CalendarDaysIcon class="shrink-0 size-5" /> <span id="hs-soft-color-secondary-label" class="font-bold">Evaluation Schedule</span> 
+                    March 12, 2025 - March 20, 2025
+                </div>
+
+                <Alert isRounded variant="soft" color="rose">
+                    <span class="font-bold">Box</span> alert! You should check in on some of those fields below.
+                </Alert>
+
+                <Alert isRounded variant="soft" color="slate">
+                    <span class="font-bold">Box</span> alert! You should check in on some of those fields below.
+                </Alert>
+
+                <Alert variant="ink" color="red" inkPosition="left">
+                    <span class="font-bold">Box</span> alert! You should check in on some of those fields below.
+                </Alert>
+
+                <div class="space-x-4">
+                    <Button color="blue" variant="solid">Solid Button</Button>
+                    <Button color="blue" variant="outline">Outline Button</Button>
+                    <Button color="red" isRounded isDisabled>Disabled Button</Button>
+                </div>
+
                 <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     <template v-for="n in 7">
                         <DsCard :hover-effect="true">
                             <div class="p-4 md:p-5">
                                 <div class="space-y-3 text-center">
-                                    <img class="inline-block size-14 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Avatar">
+                                    <img class="inline-block size-14 rounded-full"
+                                        src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                                        alt="Avatar">
                                     <div class="space-y-1">
                                         <div class="font-semibold text-gray-800">
                                             Terry Clifford
@@ -93,20 +128,25 @@
                                             Department of Electronics Engineering
                                         </div>
                                     </div>
-                                    <ul class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
-                                        <li class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 py-2">
+                                    <ul
+                                        class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                                        <li
+                                            class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 py-2">
                                             <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
                                                 Evaluation Start:
                                             </span>
-                                            <span class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            <span
+                                                class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
                                                 March 12, 2025
                                             </span>
                                         </li>
-                                        <li class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 pt-2">
+                                        <li
+                                            class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 pt-2">
                                             <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
                                                 Evaluation End:
                                             </span>
-                                            <span class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            <span
+                                                class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
                                                 March 20, 2025
                                             </span>
                                         </li>
@@ -117,7 +157,7 @@
                     </template>
                 </div>
                 <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
-                    
+
                     <div class="flex flex-col">
                         <div class="-m-1.5 overflow-x-auto">
                             <div class="p-1.5 min-w-full inline-block align-middle">
@@ -146,11 +186,14 @@
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800 dark:text-neutral-200">
                                                         Terry Clifford</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         Department of Electronics Engineering</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         March 12, 2025</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                                                    <td
+                                                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         March 20, 2025</td>
                                                 </tr>
                                             </template>
@@ -168,5 +211,5 @@
 </template>
 
 <script setup>
-    import { SearchIcon, PlusIcon, CreditCardIcon, TableIcon, FilePenLine, CalendarClock } from 'lucide-vue-next';
+import { SearchIcon, PlusIcon, CreditCardIcon, TableIcon, FilePenLine, CalendarClock, CalendarDaysIcon } from 'lucide-vue-next';
 </script>

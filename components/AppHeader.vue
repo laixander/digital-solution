@@ -27,6 +27,8 @@
                 </div>
 
                 <div class="flex flex-row items-center justify-end gap-1 xl:w-full">
+                    <DsDarkMode />
+
                     <!-- Select -->
                     <div class="hidden xl:block">
                         <CampusSelect v-model="campus" :options="campuses" placeholder="Select Campus" width="200px" />
