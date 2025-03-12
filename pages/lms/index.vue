@@ -86,27 +86,27 @@
                                 <div class="space-y-3 text-center">
                                     <img class="inline-block size-14 rounded-full" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Avatar">
                                     <div class="space-y-1">
-                                        <div class="font-semibold text-sm text-gray-800">
+                                        <div class="font-semibold text-gray-800">
                                             Terry Clifford
                                         </div>
-                                        <div class="text-xs text-gray-500">
+                                        <div class="text-sm text-gray-500">
                                             Department of Electronics Engineering
                                         </div>
                                     </div>
                                     <ul class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
                                         <li class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 py-2">
-                                            <span class="text-xs font-medium text-gray-800 dark:text-neutral-800">
+                                            <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
                                                 Evaluation Start:
                                             </span>
-                                            <span class="text-xs text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            <span class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
                                                 March 12, 2025
                                             </span>
                                         </li>
                                         <li class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 pt-2">
-                                            <span class="text-xs font-medium text-gray-800 dark:text-neutral-800">
+                                            <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
                                                 Evaluation End:
                                             </span>
-                                            <span class="text-xs text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            <span class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
                                                 March 20, 2025
                                             </span>
                                         </li>
@@ -146,11 +146,11 @@
                                                     <td
                                                         class="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-800 dark:text-neutral-200">
                                                         Terry Clifford</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-800 dark:text-neutral-200">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         Department of Electronics Engineering</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-800 dark:text-neutral-200">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         March 12, 2025</td>
-                                                    <td class="px-6 py-4 whitespace-nowrap text-xs text-gray-800 dark:text-neutral-200">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                                                         March 20, 2025</td>
                                                 </tr>
                                             </template>
