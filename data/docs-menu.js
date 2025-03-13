@@ -5,9 +5,13 @@ export const menuItems = [
         icon: "HomeIcon",
     },
     {
-        label: "Actions",
+        label: "Base Components",
         icon: "MousePointerClickIcon",
         children: [
+            {
+                label: "Alert",
+                to: "/docs/alert"
+            },
             {
                 label: "Button",
                 to: "/docs/button",
@@ -30,6 +34,32 @@ export const menuItems = [
             },
         ]
     },
+    // {
+    //     label: "Actions",
+    //     icon: "MousePointerClickIcon",
+    //     children: [
+    //         {
+    //             label: "Button",
+    //             to: "/docs/button",
+    //         },
+    //         {
+    //             label: "Dropdown",
+    //             to: "",
+    //         },
+    //         {
+    //             label: "Modal",
+    //             to: "",
+    //         },
+    //         {
+    //             label: "Swap",
+    //             to: "",
+    //         },
+    //         {
+    //             label: "Theme Controller",
+    //             to: "",
+    //         },
+    //     ]
+    // },
     {
         label: "Courses",
         to: "/cms/courses",

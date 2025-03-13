@@ -4,26 +4,26 @@
         <div class="relative">
             <!-- Input Field -->
             <div @click="toggleDropdown"
-                class="flex items-center gap-2 py-2 px-3 border rounded-lg cursor-pointer bg-white truncate">
+                class="flex items-center gap-2 py-2 px-3 border dark:border-neutral-700 rounded-lg cursor-pointer bg-white dark:bg-neutral-800 truncate">
                 <!-- Selected Item -->
-                <span v-if="selectedOption" class="text-gray-800 text-sm">
+                <span v-if="selectedOption" class="text-gray-700 dark:text-neutral-200 text-sm">
                     {{ selectedOption }}
                 </span>
                 <!-- Placeholder -->
-                <span v-else class="text-sm text-gray-400">
+                <span v-else class="text-sm text-gray-400 dark:text-neutral-500">
                     {{ placeholder }}
                 </span>
                 <div class="ml-auto">
-                    <ChevronDownIcon class="size-4 text-gray-400 transition-transform"
+                    <ChevronDownIcon class="size-4 text-gray-400 dark:text-neutral-500 transition-transform"
                         :class="{ 'rotate-180': isOpen }" />
                 </div>
             </div>
 
             <!-- Dropdown -->
             <ul v-if="isOpen"
-                class="absolute left-0 right-0 z-10 mt-1 p-1 bg-white border rounded-lg shadow-md max-h-52 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track] :bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb] :bg-neutral-500">
+                class="absolute left-0 right-0 z-10 mt-1 p-1 bg-white dark:bg-neutral-800 border dark:border-neutral-700 rounded-lg shadow-md max-h-52 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb] :bg-neutral-500">
                 <li v-for="option in options" :key="option"
-                    class="flex items-center justify-between text-sm px-4 py-2 cursor-pointer rounded-md hover:bg-gray-100"
+                    class="flex items-center justify-between text-sm text-gray-700 dark:text-neutral-200 px-4 py-2 cursor-pointer rounded-md hover:bg-neutral-300/10"
                     @click="selectOption(option)">
                     <span>{{ option }}</span>
                     <CheckIcon v-if="selectedOption === option" class="w-4 h-4 text-green-500" />

@@ -1,192 +1,114 @@
 <template>
-    <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
-        <ul class="flex flex-col space-y-1">
-            <li>
-                <a class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white"
-                    href="#">
-                    <HouseIcon class="shrink-0 size-4" />
-                    Dashboard
-                </a>
-            </li>
-
-            <li class="hs-accordion" id="users-accordion">
-                <button type="button"
-                    class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                    aria-expanded="true" aria-controls="users-accordion-child">
-                    <UsersIcon class="shrink-0 size-4" />
-                    Users
-                    <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
-                    <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
-                </button>
-
-                <div id="users-accordion-child"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                    role="region" aria-labelledby="users-accordion">
-                    <ul class="hs-accordion-group ps-4 pt-1 ms-4 space-y-1 border-l"
-                        data-hs-accordion-always-open>
-                        <li class="hs-accordion" id="users-accordion-sub-1">
-                            <button type="button"
-                                class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                                aria-expanded="true" aria-controls="users-accordion-sub-1-child">
-                                Sub Menu 1
-                                <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
-                                <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
-                            </button>
-
-                            <div id="users-accordion-sub-1-child"
-                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                                role="region" aria-labelledby="users-accordion-sub-1">
-                                <ul class="ps-4 pt-1 ms-4 space-y-1 border-l">
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 3
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hs-accordion" id="users-accordion-sub-2">
-                            <button type="button"
-                                class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                                aria-expanded="true" aria-controls="users-accordion-sub-2-child">
-                                Sub Menu 2
-                                <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
-                                <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
-                            </button>
-
-                            <div id="users-accordion-sub-2-child"
-                                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                                role="region" aria-labelledby="users-accordion-sub-2">
-                                <ul class="ps-4 pt-1 ms-4 space-y-1 border-l">
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                            href="#">
-                                            Link 3
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="hs-accordion" id="account-accordion">
-                <button type="button"
-                    class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                    aria-expanded="true" aria-controls="account-accordion-child">
-                    <UserCogIcon class="shrink-0 size-4" />
-                    Account
-                    <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
-                    <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
-                </button>
-
-                <div id="account-accordion-child"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                    role="region" aria-labelledby="account-accordion">
-                    <ul class="ps-4 pt-1 ms-4 space-y-1 border-l">
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 1
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 2
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 3
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li class="hs-accordion" id="projects-accordion">
-                <button type="button"
-                    class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                    aria-expanded="true" aria-controls="projects-accordion-child">
-                    <BriefcaseIcon class="shrink-0 size-4" />
-                    Projects
-                    <ChevronUpIcon class="hs-accordion-active:block ms-auto hidden size-4" />
-                    <ChevronDownIcon class="hs-accordion-active:hidden ms-auto block size-4" />
-                </button>
-
-                <div id="projects-accordion-child"
-                    class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
-                    role="region" aria-labelledby="projects-accordion">
-                    <ul class="ps-4 pt-1 ms-4 space-y-1 border-l">
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 1
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 2
-                            </a>
-                        </li>
-                        <li>
-                            <a class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200"
-                                href="#">
-                                Link 3
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-700 dark:text-neutral-200 dark:hover:text-neutral-300"
-                    href="#">
-                    <CalendarDaysIcon class="shrink-0 size-4" />
-                    Calendar
-                </a>
-            </li>
-            
-            <li>
-                <a class="w-full flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-300"
-                    href="#">
-                    <BookOpenIcon class="shrink-0 size-4" />
-                    Documentation
-                </a>
-            </li>
-        </ul>
+    <nav
+      class="hs-accordion-group p-3 w-full flex flex-col flex-wrap"
+      data-hs-accordion-always-open
+    >
+      <ul class="flex flex-col space-y-1">
+        <li v-for="(item, index) in menuItems" :key="index">
+          <!-- Check if item has children (submenu) -->
+          <template v-if="item.children">
+            <div :id="`accordion-${index}`" class="hs-accordion">
+              <button
+                type="button"
+                class="hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg"
+                :class="{
+                  'bg-gray-100 text-gray-700 dark:bg-neutral-700 dark:text-white': isActive(item),
+                  'text-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700':
+                    !isActive(item),
+                }"
+                :aria-expanded="false"
+                :aria-controls="`accordion-child-${index}`"
+              >
+                <component
+                  v-if="item.icon"
+                  :is="getIconComponent(item.icon)"
+                  class="shrink-0 size-4"
+                />
+                {{ item.label }}
+                <component
+                  :is="getIconComponent('ChevronUp')"
+                  class="hs-accordion-active:block ms-auto hidden size-4"
+                />
+                <component
+                  :is="getIconComponent('ChevronDown')"
+                  class="hs-accordion-active:hidden ms-auto block size-4"
+                />
+              </button>
+              <div
+                :id="`accordion-child-${index}`"
+                class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden"
+                role="region"
+                :aria-labelledby="`accordion-${index}`"
+              >
+                <ul class="ps-4 pt-1 ms-4 space-y-1 border-l dark:border-neutral-700">
+                  <li v-for="(child, childIndex) in item.children" :key="childIndex">
+                    <NuxtLink
+                      :to="child.to"
+                      class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg"
+                      :class="{
+                        'bg-gray-100 text-gray-700 dark:bg-neutral-700 dark:text-white': isActive(child),
+                        'text-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700':
+                          !isActive(child),
+                      }"
+                    >
+                      <component
+                        v-if="child.icon"
+                        :is="getIconComponent(child.icon)"
+                        class="shrink-0 size-4"
+                      />
+                      {{ child.label }}
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </template>
+          <template v-else>
+            <NuxtLink
+              :to="item.to"
+              class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm rounded-lg"
+              :class="{
+                'bg-gray-100 text-gray-700 dark:bg-neutral-700 dark:text-white': isActive(item),
+                'text-gray-700 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700':
+                  !isActive(item),
+              }"
+            >
+              <component
+                v-if="item.icon"
+                :is="getIconComponent(item.icon)"
+                class="shrink-0 size-4"
+              />
+              {{ item.label }}
+            </NuxtLink>
+          </template>
+        </li>
+      </ul>
     </nav>
-</template>
-
-<script setup>
-import { ChevronDownIcon, ChevronUpIcon, HouseIcon, UsersIcon, UserCogIcon, BriefcaseIcon, CalendarDaysIcon, BookOpenIcon, } from 'lucide-vue-next';
-</script>
+  </template>
+  
+  <script setup>
+  import { useRoute } from "vue-router";
+  import * as lucideIcons from "lucide-vue-next";
+  
+  // Props
+  defineProps({
+    menuItems: {
+      type: Array,
+      required: true,
+      default: () => [],
+    },
+  });
+  
+  // Composition
+  const route = useRoute();
+  
+  // Methods
+  const getIconComponent = (iconName) => lucideIcons[iconName] || null;
+  
+  // Check if a menu item is active
+  const isActive = (item) => {
+    if (!item.to) return false;
+    // Ensure exact match for active routes
+    return route.path === item.to;
+  };
+  </script>

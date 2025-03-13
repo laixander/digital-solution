@@ -10,7 +10,7 @@
                     <slot name="appLogo"></slot>
                     <!-- <LogoLMS className="size-16" /> -->
                     <!-- <LogoDS className="size-14" fill="#334155" /> -->
-                    <span class="text-sm text-gray-800 font-medium">
+                    <span class="text-sm text-gray-700 dark:text-neutral-200 font-medium">
                         {{ appName }}
                     </span>
                 </a>
@@ -24,7 +24,7 @@
             </div>
             <!-- End Content -->
 
-            <div class="shrink-0 group block p-3 border-t border-gray-200">
+            <div class="shrink-0 group block p-3 border-t border-gray-200 dark:border-neutral-700">
                 <SbProfile />
             </div>
         </div>

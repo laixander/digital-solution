@@ -10,7 +10,7 @@
             </button>
             <div class="hs-dropdown-menu border border-gray-200 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[235px] bg-white shadow-md rounded-lg mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
                 role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-account">
-                <div class="border-b border-gray-200 py-3 px-5 bg-gray-50 rounded-t-lg dark:bg-neutral-700">
+                <div class="border-b border-gray-200 dark:border-neutral-700 py-3 px-5 bg-gray-50 rounded-t-lg dark:bg-neutral-800">
                     <p class="text-sm text-gray-500 dark:text-neutral-500">Signed in as</p>
                     <p class="text-sm font-medium text-gray-800 dark:text-neutral-200">jbaltazar@scp.edu</p>
                 </div>
@@ -39,10 +39,12 @@
             <p class="text-sm text-gray-500 dark:text-neutral-500">Administrator</p>
         </div>
 
-        <button type="button" class="size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
+        <!-- <button type="button" class="size-[38px] relative inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700 dark:focus:bg-neutral-700">
             <BellIcon class="shrink-0 size-4" />
             <span class="sr-only">Notifications</span>
-        </button>
+        </button> -->
+
+        <DsDarkMode />
     </div>
 </template>
 

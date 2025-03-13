@@ -19,15 +19,14 @@
                     <slot name="pageTitle"></slot>
                 </div>
 
-                <div class="flex items-center gap-3 text-gray-900">
-                    <LogoCampus className="size-9 text-gray-500" />
+                <div class="flex items-center gap-3 text-gray-700 dark:text-neutral-200">
+                    <LogoCampus className="size-9 text-gray-500 dark:text-neutral-400" />
                     <span class="truncate hidden sm:inline">
                         State Colleges of the Philippines
                     </span>
                 </div>
 
                 <div class="flex flex-row items-center justify-end gap-1 xl:w-full">
-                    <DsDarkMode />
 
                     <!-- Select -->
                     <div class="hidden xl:block">

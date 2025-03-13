@@ -9,7 +9,7 @@
             <LogoCMS className="size-16" />
         </template>
         <template #menu>
-            <DsMenu :menu-items="menuItems" />
+            <Menu :menu-items="menuItems" />
         </template>
     </AppSidebar>
 
