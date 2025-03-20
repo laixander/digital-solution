@@ -93,7 +93,7 @@
                     March 12, 2025 - March 20, 2025
                 </div>
 
-                <Alert isRounded variant="soft" color="rose">
+                <!-- <Alert isRounded variant="soft" color="rose">
                     <span class="font-bold">Box</span> alert! You should check in on some of those fields below.
                 </Alert>
 
@@ -109,51 +109,49 @@
                     <Button color="blue" variant="solid">Solid Button</Button>
                     <Button color="blue" variant="outline">Outline Button</Button>
                     <Button color="red" isRounded isDisabled>Disabled Button</Button>
-                </div>
+                </div> -->
 
                 <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     <template v-for="n in 7">
-                        <DsCard :hover-effect="true">
-                            <div class="p-4 md:p-5">
-                                <div class="space-y-3 text-center">
-                                    <img class="inline-block size-14 rounded-full"
-                                        src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
-                                        alt="Avatar">
-                                    <div class="space-y-1">
-                                        <div class="font-semibold text-gray-800">
-                                            Terry Clifford
-                                        </div>
-                                        <div class="text-sm text-gray-500">
-                                            Department of Electronics Engineering
-                                        </div>
+                        <Card has-hover>
+                            <div class="space-y-4 text-center">
+                                <img class="inline-block size-14 rounded-full"
+                                    src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+                                    alt="Avatar">
+                                <div class="space-y-1">
+                                    <div class="font-semibold text-gray-800">
+                                        Terry Clifford
                                     </div>
-                                    <ul
-                                        class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
-                                        <li
-                                            class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 py-2">
-                                            <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
-                                                Evaluation Start:
-                                            </span>
-                                            <span
-                                                class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
-                                                March 12, 2025
-                                            </span>
-                                        </li>
-                                        <li
-                                            class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 pt-2">
-                                            <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
-                                                Evaluation End:
-                                            </span>
-                                            <span
-                                                class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
-                                                March 20, 2025
-                                            </span>
-                                        </li>
-                                    </ul>
+                                    <div class="text-sm text-gray-500">
+                                        Department of Electronics Engineering
+                                    </div>
                                 </div>
+                                <!-- <ul
+                                    class="min-w-full flex flex-col divide-y divide-gray-200 dark:divide-neutral-700">
+                                    <li
+                                        class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 py-2">
+                                        <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
+                                            Evaluation Start:
+                                        </span>
+                                        <span
+                                            class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            March 12, 2025
+                                        </span>
+                                    </li>
+                                    <li
+                                        class="inline-flex flex-col xl:flex-row xl:items-center xl:justify-between gap-1 xl:gap-3 pt-2">
+                                        <span class="text-sm font-medium text-gray-800 dark:text-neutral-800">
+                                            Evaluation End:
+                                        </span>
+                                        <span
+                                            class="text-sm text-gray-500 xl:text-right truncate dark:text-neutral-200">
+                                            March 20, 2025
+                                        </span>
+                                    </li>
+                                </ul> -->
                             </div>
-                        </DsCard>
+                        </Card>
                     </template>
                 </div>
                 <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
@@ -210,6 +208,16 @@
     </AppContent>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { SearchIcon, PlusIcon, CreditCardIcon, TableIcon, FilePenLine, CalendarClock, CalendarDaysIcon } from 'lucide-vue-next';
+
+// Generates a random HEX color
+const randomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 </script>
